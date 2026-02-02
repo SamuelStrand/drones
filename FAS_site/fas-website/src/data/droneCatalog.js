@@ -1,4 +1,4 @@
-import { DRONES_DATA, getDronesForCategory as getDronesFromData } from "./dronesData";
+import {getDronesForCategory as getDronesFromData } from "./dronesData";
 
 export const DRONE_CATEGORIES = [
   {

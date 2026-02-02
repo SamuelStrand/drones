@@ -38,7 +38,7 @@ const resources = {
       },
       
       nav: {
-        drones: "Drones",
+        drones: "Products",
         solutions: "Solutions",
         service: "Services",
         education: "Education",
