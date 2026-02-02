@@ -8,13 +8,13 @@ const droneCategories = [
     id: 1,
     key: "cat_evtol",
     slug: "evtol",
-    img: "https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&fit=crop&q=80&w=800",
+    img: "EVTOL.png",
   },
   {
     id: 2,
     key: "cat_multirotor",
     slug: "multirotor",
-    img: "https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&fit=crop&q=80&w=800",
+    img: "Multi-rotor.jpg",
   },
 ];
 

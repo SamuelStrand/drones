@@ -33,9 +33,9 @@ const resources = {
         },
       },
       nav: {
-        drones: "Drones",
+        drones: "Products",
         solutions: "Solutions",
-        service: "Service",
+        service: "Services",
         contact: "Contact",
         get_started: "Get Started",
       },
@@ -436,7 +436,7 @@ const resources = {
             "Связаться с Forpost Aero Service в Алматы. Адрес, телефон, email. БПЛА и авиационные решения в Казахстане.",
         },
       },
-      nav: { drones: "Дроны", solutions: "Решения", service: "Сервис", contact: "Контакты", get_started: "Начать" },
+      nav: { drones: "Продукты", solutions: "Решения", service: "Услуги", contact: "Контакты", get_started: "Начать" },
       hero: {
         title: "НОВОЕ ОПРЕДЕЛЕНИЕ",
         subtitle: "ПОЛЕТА",
@@ -826,7 +826,7 @@ const resources = {
           description: "Алматыда Forpost Aero Service-пен байланысыңыз. Мекенжай, телефон, email.",
         },
       },
-      nav: { drones: "Дрондар", solutions: "Шешімдер", service: "Сервис", contact: "Контактілер", get_started: "Бастау" },
+      nav: { drones: "Өнімдер", solutions: "Шешімдер", service: "Қызметтер", contact: "Контактілер", get_started: "Бастау" },
       hero: {
         title: "ҰШУДЫҢ",
         subtitle: "ЖАҢА КЕЗЕҢІ",
