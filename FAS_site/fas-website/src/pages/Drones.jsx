@@ -41,20 +41,30 @@ export default function Drones() {
               <Link
                 key={drone.id}
                 to={`/drones/${drone.slug}`}
-                className="bg-zinc-900 border border-white/10 overflow-hidden group hover:border-blue-800 transition-all"
+                className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/10 overflow-hidden group hover:border-blue-700 dark:hover:border-blue-800 shadow-sm hover:shadow-xl dark:shadow-none transition-all duration-500 rounded-sm"
               >
-                <img
-                  src={drone.img}
-                  alt={t(`drones_page.${drone.key}.name`)}
-                  className="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white uppercase">{t(`drones_page.${drone.key}.name`)}</h3>
-                  <p className="text-zinc-500 text-sm mt-2">{t(`drones_page.${drone.key}.specs`)}</p>
+                {/* Image Container */}
+                <div className="overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+                  <img
+                    src={drone.img}
+                    alt={t(`drones_page.${drone.key}.name`)}
+                    className="w-full h-72 object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  />
+                </div>
 
-                  <span className="inline-block mt-6 text-blue-500 font-bold uppercase text-xs tracking-widest group-hover:text-white transition">
-                    {t('drones_page.view')} →
-                  </span>
+                {/* Content */}
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-zinc-900 dark:text-white uppercase tracking-tight">
+                    {t(`drones_page.${drone.key}.name`)}
+                  </h3>
+                  <p className="text-zinc-500 dark:text-zinc-500 text-sm mt-3 leading-relaxed">
+                    {t(`drones_page.${drone.key}.specs`)}
+                  </p>
+
+                  <div className="mt-8 flex items-center gap-2 text-blue-600 dark:text-blue-500 font-bold uppercase text-xs tracking-[0.2em] group-hover:gap-4 transition-all">
+                    <span>{t('drones_page.view')}</span>
+                    <span className="text-lg">→</span>
+                  </div>
                 </div>
               </Link>
             ))}
