@@ -10,7 +10,7 @@ export default function Footer() {
         
         {/* Brand Column */}
         <div className="col-span-2 md:col-span-1">
-          <Link to="/" className="text-2xl font-black text-zinc-900 dark:text-white tracking-tighter mb-6 block hover:opacity-80 transition">
+          <Link to="/" className="text-2xl font-black text-white tracking-tighter mb-6 block hover:opacity-80 transition">
             FORPOST AERO SERVICE
           </Link>
           <p className="text-zinc-500 dark:text-zinc-500 text-sm leading-relaxed">

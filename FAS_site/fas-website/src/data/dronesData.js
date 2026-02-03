@@ -12,6 +12,7 @@ export const DRONES_DATA = [
     categorySlug: "multirotor",
     key: "evo_lite_enterprise",
     autelUrl: "https://www.autelrobotics.com/productdetail/evo-lite-enterprise-series/",
+    image: "/drone_images/EVOLiteEnterpriseSeries.png",
     tagline: "drones_catalog.items.evo_lite_enterprise.tagline",
     description: "drones_catalog.items.evo_lite_enterprise.description",
     specs: [
@@ -38,6 +39,7 @@ export const DRONES_DATA = [
     categorySlug: "multirotor",
     key: "evo_max_4t",
     autelUrl: "https://www.autelrobotics.com/productdetail/evo-max-4t/",
+    image: "/drone_images/EVOMax4T.png",
     tagline: "drones_catalog.items.evo_max_4t.tagline",
     description: "drones_catalog.items.evo_max_4t.description",
     specs: [
@@ -64,6 +66,7 @@ export const DRONES_DATA = [
     categorySlug: "multirotor",
     key: "evo_max_4n",
     autelUrl: "https://www.autelrobotics.com/productdetail/evo-max-4n/",
+    image: "/drone_images/EVOMax4N.png",
     tagline: "drones_catalog.items.evo_max_4n.tagline",
     description: "drones_catalog.items.evo_max_4n.description",
     specs: [
@@ -90,6 +93,7 @@ export const DRONES_DATA = [
     categorySlug: "multirotor",
     key: "autel_alpha",
     autelUrl: "https://www.autelrobotics.com/productdetail/autel-alpha/",
+    image: "/drone_images/AutelAlpha.png",
     tagline: "drones_catalog.items.autel_alpha.tagline",
     description: "drones_catalog.items.autel_alpha.description",
     specs: [
@@ -116,6 +120,7 @@ export const DRONES_DATA = [
     categorySlug: "multirotor",
     key: "evo_ii_enterprise_v3",
     autelUrl: "https://www.autelrobotics.com/productdetail/evo-ii-enterprise-drones/",
+    image: "/drone_images/EVOIIEnterpriseV3.png",
     tagline: "drones_catalog.items.evo_ii_enterprise_v3.tagline",
     description: "drones_catalog.items.evo_ii_enterprise_v3.description",
     specs: [
@@ -142,6 +147,7 @@ export const DRONES_DATA = [
     categorySlug: "multirotor",
     key: "evo_ii_dual_640t_v3",
     autelUrl: "https://www.autelrobotics.com/productdetail/evo-ii-dual-640t-drones/",
+    image: "/drone_images/EVOIIDual640TV3.png",
     tagline: "drones_catalog.items.evo_ii_dual_640t_v3.tagline",
     description: "drones_catalog.items.evo_ii_dual_640t_v3.description",
     specs: [
@@ -168,6 +174,7 @@ export const DRONES_DATA = [
     categorySlug: "multirotor",
     key: "evo_ii_rtk_v3",
     autelUrl: "https://www.autelrobotics.com/productdetail/evo-ii-rtk-series-drones/",
+    image: "/drone_images/EVOIIRTKV3.png",
     tagline: "drones_catalog.items.evo_ii_rtk_v3.tagline",
     description: "drones_catalog.items.evo_ii_rtk_v3.description",
     specs: [
@@ -194,6 +201,7 @@ export const DRONES_DATA = [
     categorySlug: "multirotor",
     key: "evo_ii_pro_v3",
     autelUrl: "https://www.autelrobotics.com/productdetail/evo-ii-pro-drones/",
+    image: "/drone_images/EVOIIProV3.png",
     tagline: "drones_catalog.items.evo_ii_pro_v3.tagline",
     description: "drones_catalog.items.evo_ii_pro_v3.description",
     specs: [
@@ -221,6 +229,7 @@ export const DRONES_DATA = [
     categorySlug: "evtol",
     key: "dragonfish_25",
     autelUrl: "https://www.autelrobotics.com/productdetail/dragonfish-25/",
+    image: "/drone_images/Dragonfish25.png",
     tagline: "drones_catalog.items.dragonfish_25.tagline",
     description: "drones_catalog.items.dragonfish_25.description",
     specs: [
@@ -247,6 +256,7 @@ export const DRONES_DATA = [
     categorySlug: "evtol",
     key: "dragonfish_pro",
     autelUrl: "https://www.autelrobotics.com/productdetail/dragonfish-pro/",
+    image: "/drone_images/DragonfishPro.png",
     tagline: "drones_catalog.items.dragonfish_pro.tagline",
     description: "drones_catalog.items.dragonfish_pro.description",
     specs: [
@@ -273,6 +283,7 @@ export const DRONES_DATA = [
     categorySlug: "evtol",
     key: "dragonfish_standard",
     autelUrl: "https://www.autelrobotics.com/productdetail/dragonfish-standard/",
+    image: "/drone_images/DragonfishStandart.png",
     tagline: "drones_catalog.items.dragonfish_standard.tagline",
     description: "drones_catalog.items.dragonfish_standard.description",
     specs: [

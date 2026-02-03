@@ -31,11 +31,17 @@ const resources = {
           description:
             "Contact Forpost Aero Service in Almaty. Address, phone, email. UAV and aviation solutions in Kazakhstan.",
         },
+        education: {
+          title: "Education",
+          description: "Professional UAV operator training in Kazakhstan. Group and individual Category 1 certification."
+        }
       },
+      
       nav: {
         drones: "Drones",
         solutions: "Solutions",
-        service: "Service",
+        service: "Services",
+        education: "Education",
         contact: "Contact",
         get_started: "Get Started",
       },
@@ -465,8 +471,20 @@ const resources = {
           description:
             "Связаться с Forpost Aero Service в Алматы. Адрес, телефон, email. БПЛА и авиационные решения в Казахстане.",
         },
+        education: {
+          title: "Обучение",
+          description: "Профессиональное обучение операторов БПЛА в Казахстане. Сертификация Категории 1."
+        }
       },
-      nav: { drones: "Дроны", solutions: "Решения", service: "Сервис", contact: "Контакты", get_started: "Начать" },
+      nav: { 
+        drones: "Продукты", 
+        solutions: "Решения", 
+        service: "Услуги", 
+        education: "Обучение", // Added
+        contact: "Контакты", 
+        get_started: "Начать" 
+      },   
+
       hero: {
         title: "НОВОЕ ОПРЕДЕЛЕНИЕ",
         subtitle: "ПОЛЕТА",

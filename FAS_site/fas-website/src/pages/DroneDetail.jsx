@@ -3,13 +3,23 @@ import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import PageTransition from "../components/PageTransition";
 import SEO from "../components/SEO";
-import {
-  getDroneBySlug,
-  getDroneCategory,
-  getDronesForCategory,
-} from "../data/droneCatalog";
+import { getDroneBySlug, getDroneCategory, getDronesForCategory } from "../data/droneCatalog";
 
-function PlaceholderHero({ label }) {
+function DroneHero({ image, label }) {
+  if (image) {
+    return (
+      <div className="aspect-video w-full max-w-4xl mx-auto rounded-2xl overflow-hidden bg-white border border-white/10">
+        <img 
+          src={image} 
+          alt={label} 
+          className="w-full h-full object-cover"
+          onError={(e) => { e.target.src = 'https://via.placeholder.com/1200x675?text=Image+Not+Found'; }}
+        />
+      </div>
+    );
+  }
+
+  // Fallback
   return (
     <div className="aspect-video w-full max-w-4xl mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-white/10 via-white/5 to-transparent flex items-center justify-center">
       <span className="text-white/20 font-black tracking-widest uppercase text-lg">
@@ -91,7 +101,7 @@ export default function DroneDetail() {
           </nav>
 
           {/* Hero */}
-          <PlaceholderHero label={shortLabel} />
+          <DroneHero image={drone.image} label={shortLabel} />
           <h1 className="mt-8 text-4xl md:text-5xl font-black uppercase">
             {name}
           </h1>
