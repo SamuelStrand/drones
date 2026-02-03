@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext';
 
 export default function Header() {
+  const { isDarkMode, setIsDarkMode } = useTheme();
   const { t, i18n } = useTranslation();
 
   return (
@@ -81,33 +83,20 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Center Section */}
-      <ul className="hidden md:flex gap-10 text-sm font-medium uppercase tracking-[0.2em]">
-        <li className="hover:text-blue-500 transition-colors"> 
-          <Link to="/drones">{t('nav.drones')}</Link>
-        </li>
-        <li className="hover:text-blue-500 transition-colors">
-          <Link to="/service">{t('nav.service')}</Link>
-        </li>
-        <li className="hover:text-blue-500 transition-colors">
-          <Link to="/contact">{t('nav.contact')}</Link>
-        </li>
-      </ul>
-
-      {/* Right Section */}
-      <div className="flex-1 flex justify-end">
-        <div className="flex gap-4 text-[10px] font-bold">
-          {['en', 'ru', 'kk'].map((lng) => (
-            <button 
-              key={lng}
-              onClick={() => i18n.changeLanguage(lng)}
-              className={`hover:text-white uppercase transition-colors ${
-                i18n.language === lng ? 'text-blue-500' : 'text-zinc-500'
-              }`}
-            >
-              {lng === 'kk' ? 'KZ' : lng}
-            </button>
-          ))}
+      {/* Mobile Dropdown Menu */}
+      {isMenuOpen && (
+        <div className="lg:hidden bg-zinc-950 border-b border-white/10 px-6 py-6 transition-all">
+          <ul className="flex flex-col gap-6 text-sm font-medium uppercase tracking-[0.2em] text-white">
+            <li onClick={() => setIsMenuOpen(false)}>
+              <Link to="/drones" className="block py-2">{t('nav.drones')}</Link>
+            </li>
+            <li onClick={() => setIsMenuOpen(false)}>
+              <Link to="/service" className="block py-2">{t('nav.service')}</Link>
+            </li>
+            <li onClick={() => setIsMenuOpen(false)}>
+              <Link to="/contact" className="block py-2">{t('nav.contact')}</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
