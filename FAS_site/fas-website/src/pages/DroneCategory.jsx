@@ -1,29 +1,39 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
 import PageTransition from "../components/PageTransition";
 import SEO from "../components/SEO";
 import { DRONE_CATEGORIES, getDroneCategory, getDronesForCategory } from "../data/droneCatalog";
 
-function PlaceholderImage({ label }) {
+function DroneImage({ image, label }) {
+    const [isError, setIsError] = useState(false);
+
     return (
         <div className="relative h-44 w-full overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-white/10 via-white/5 to-transparent">
             {/* animated glow */}
             <div className="drone-glow-layer absolute inset-0" />
 
             {/* glass lens */}
-            <div className="drone-glass-layer absolute inset-0 pointer-events-none" />
+            <div className="drone-glass-layer absolute inset-0 pointer-events-none z-10" />
 
             {/* shine sweep */}
-            <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute inset-0 pointer-events-none z-20">
                 <div className="drone-shine-layer absolute inset-y-[-40%] left-[-60%] w-[60%]" />
             </div>
 
-            <div className="h-full w-full flex items-center justify-center px-4">
-        <span className="text-white/20 font-black tracking-widest uppercase text-sm text-center transition duration-300 group-hover:text-white/70">
-          {label}
-        </span>
+            <div className="h-full w-full flex items-center justify-center p-6">
+                {!isError && image ? (
+                    <img 
+                        src={image} 
+                        alt={label}
+                        className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110"
+                        onError={() => setIsError(true)}
+                    />
+                ) : (
+                    <span className="text-white/20 font-black tracking-widest uppercase text-sm text-center transition duration-300 group-hover:text-white/70">
+                        {label}
+                    </span>
+                )}
             </div>
         </div>
     );
@@ -128,7 +138,11 @@ export default function DroneCategory() {
                                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-br from-blue-800/20 via-transparent to-transparent" />
 
                                     <div className="relative p-6 flex flex-col h-full">
-                                        <PlaceholderImage label={shortLabel} />
+                                        {/* Updated to use the new DroneImage component */}
+                                        <DroneImage 
+                                            src={drone.image} 
+                                            label={shortLabel} 
+                                        />
 
                                         <h3 className="mt-6 text-xl font-black uppercase">{name}</h3>
 
@@ -144,8 +158,8 @@ export default function DroneCategory() {
                                         <div className="mt-6 flex-1" />
 
                                         <span className="inline-flex items-center gap-2 text-blue-500 font-bold uppercase text-xs tracking-widest group-hover:text-white transition">
-                      {t("drones_category.learn_more")} →
-                    </span>
+                                            {t("drones_category.learn_more")} →
+                                        </span>
                                     </div>
                                 </Link>
                             );
