@@ -1,4 +1,4 @@
-import { DRONES_DATA, getDronesForCategory as getDronesFromData } from "./dronesData";
+import {getDronesForCategory as getDronesFromData } from "./dronesData";
 
 export const DRONE_CATEGORIES = [
   {
@@ -18,6 +18,7 @@ export function getDronesForCategory(categorySlug) {
   return getDronesFromData(categorySlug).map((d) => ({
     key: d.key,
     slug: d.slug,
+    image: d.image,
     autelUrl: d.autelUrl,
   }));
 }

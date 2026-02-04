@@ -31,11 +31,17 @@ const resources = {
           description:
             "Contact Forpost Aero Service in Almaty. Address, phone, email. UAV and aviation solutions in Kazakhstan.",
         },
+        education: {
+          title: "Education",
+          description: "Professional UAV operator training in Kazakhstan. Group and individual Category 1 certification."
+        }
       },
+      
       nav: {
-        drones: "Drones",
+        drones: "Products",
         solutions: "Solutions",
-        service: "Service",
+        service: "Services",
+        education: "Education",
         contact: "Contact",
         get_started: "Get Started",
       },
@@ -392,6 +398,36 @@ const resources = {
         consult_desc: "Strategic planning for implementing drone technology into your existing industrial workflow.",
         btn_contact: "Contact us",
       },
+      education: {
+        title: "Training of UAV Operators (Category 1)",
+        description: "Category 1 — this is the initial level of training for unmanned aerial vehicle operators, designed for the legal and safe operation of UAVs weighing up to 25 kg within established rules.",
+        group: {
+          title: "Group training up to 20 people",
+          price: "Cost: 45,000 ₸ per person",
+          items: [
+            "Theoretical preparation for Category 1 UAV operators",
+            "Basics of RK air law and rules for using airspace",
+            "Structure of airspace and flight execution procedures",
+            "Flight planning and UAV preparation",
+            "Basics of aviation meteorology",
+            "Aviation security and flight safety",
+            "Final testing and certification issuance"
+          ]
+        },
+        individual: {
+          title: "Individual training personally",
+          price: "Cost: 250,000 ₸",
+          items: [
+            "Individual training schedule",
+            "Full course of theoretical preparation for Category 1",
+            "Detailed analysis of the regulatory base and practical cases",
+            "In-depth study of flight planning and UAV operation",
+            "Personal instructor support",
+            "Final testing",
+            "Certificate of completion"
+          ]
+        }
+      },
       contact: {
         title: "Contact",
         us: "Us",
@@ -435,8 +471,20 @@ const resources = {
           description:
             "Связаться с Forpost Aero Service в Алматы. Адрес, телефон, email. БПЛА и авиационные решения в Казахстане.",
         },
+        education: {
+          title: "Обучение",
+          description: "Профессиональное обучение операторов БПЛА в Казахстане. Сертификация Категории 1."
+        }
       },
-      nav: { drones: "Дроны", solutions: "Решения", service: "Сервис", contact: "Контакты", get_started: "Начать" },
+      nav: { 
+        drones: "Продукты", 
+        solutions: "Решения", 
+        service: "Услуги", 
+        education: "Обучение", // Added
+        contact: "Контакты", 
+        get_started: "Начать" 
+      },   
+
       hero: {
         title: "НОВОЕ ОПРЕДЕЛЕНИЕ",
         subtitle: "ПОЛЕТА",
@@ -787,6 +835,36 @@ const resources = {
         consult_desc: "Стратегическое планирование внедрения дрон-технологий в ваш рабочий процесс.",
         btn_contact: "Связаться с нами",
       },
+      education: {
+        title: "ОБУЧЕНИЕ ОПЕРАТОРОВ БПЛА (КАТЕГОРИЯ 1)",
+        description: "Категория 1 — это начальный уровень подготовки операторов беспилотных летательных аппаратов, предназначенный для законной и безопасной эксплуатации БПЛА массой до 25 кг в пределах установленных правил.",
+        group: {
+          title: "Групповое обучение до 20 человек",
+          price: "Стоимость: 45 000 ₸ с человека",
+          items: [
+            "Теоретическая подготовка операторов БПЛА категории 1",
+            "Основы воздушного права РК и правил использования воздушного пространства",
+            "Структура воздушного пространства и порядок выполнения полётов",
+            "Планирование полётов и подготовка БПЛА",
+            "Основы авиационной метеорологии",
+            "Авиационная безопасность и безопасность полётов",
+            "Итоговое тестирование и выдача сертификата"
+          ]
+        },
+        individual: {
+          title: "Индивидуальное обучение персонально",
+          price: "Стоимость: 250 000 ₸",
+          items: [
+            "Индивидуальный график обучения",
+            "Полный курс теоретической подготовки категории 1",
+            "Детальный разбор нормативной базы и практических кейсов",
+            "Углублённое изучение планирования и эксплуатации БПЛА",
+            "Персональное сопровождение инструктора",
+            "Итоговое тестирование",
+            "Сертификат о прохождении обучения"
+          ]
+        }
+      },
       contact: {
         title: "Свяжитесь",
         us: "с нами",
@@ -826,7 +904,7 @@ const resources = {
           description: "Алматыда Forpost Aero Service-пен байланысыңыз. Мекенжай, телефон, email.",
         },
       },
-      nav: { drones: "Дрондар", solutions: "Шешімдер", service: "Сервис", contact: "Контактілер", get_started: "Бастау" },
+      nav: { drones: "Өнімдер", solutions: "Шешімдер", service: "Қызметтер", contact: "Контактілер", get_started: "Бастау" },
       hero: {
         title: "ҰШУДЫҢ",
         subtitle: "ЖАҢА КЕЗЕҢІ",
