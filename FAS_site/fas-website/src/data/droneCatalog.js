@@ -18,6 +18,7 @@ export function getDronesForCategory(categorySlug) {
   return getDronesFromData(categorySlug).map((d) => ({
     key: d.key,
     slug: d.slug,
+    image: d.image,
     autelUrl: d.autelUrl,
   }));
 }
