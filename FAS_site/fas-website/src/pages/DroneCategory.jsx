@@ -106,6 +106,8 @@ export default function DroneCategory() {
                             const shortLabel = t(`drones_catalog.items.${drone.key}.short_label`, { defaultValue: name });
                             const highlights = t(`drones_catalog.items.${drone.key}.highlights`, { returnObjects: true });
                             const highlightList = Array.isArray(highlights) ? highlights : [];
+                            console.log(drone.image)
+                            console.log(12345)
 
                             return (
                                 <Link
