@@ -24,9 +24,10 @@ export default function Drones() {
     <PageTransition>
       <SEO title={t('seo.drones.title')} description={t('seo.drones.description')} path="/drones" />
       
+      
       <div className="pt-32 pb-20 bg-slate-50 dark:bg-zinc-950 min-h-screen transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-10">
-          
+            
           {/* Header */}
           <h1 className="text-5xl md:text-6xl font-black text-blue-700 dark:text-blue-800 uppercase mb-4 tracking-tighter">
             {t('nav.drones')}
@@ -35,6 +36,16 @@ export default function Drones() {
             {t('drones_page.desc')}
           </p>
 
+          {/* Solutions */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tight">
+              {t('drones_page.solutions')}
+            </h2>
+            <p className="text-zinc-500 dark:text-zinc-400 max-w-3xl text-lg">
+              {t('drones_page.solutions_desc')}
+            </p>
+          </div>
+          
           {/* Categories Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {droneCategories.map((drone) => (
@@ -70,7 +81,9 @@ export default function Drones() {
             ))}
           </div>
         </div>
+        
       </div>
+      
     </PageTransition>
   );
 }

@@ -17,9 +17,12 @@ export default function Header() {
         {/* Left Section: Logo + Text */}
         <div className="flex items-center">
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition">
-            <img src="/ForpostLogo.jpg" alt="Logo" className="h-8 w-auto md:h-10 shrink-0"/>
-            {/* Hidden on mobile, visible on tablet/desktop to prevent overlap */}
-            <span className="hidden sm:block text-lg md:text-2xl font-bold tracking-tighter whitespace-nowrap text-white">
+            <img 
+              src="/FAS_logo.png" 
+              alt="Logo" 
+              className="h-8 w-auto md:h-10 shrink-0 rounded-sm"
+            />
+            <span className="hidden sm:block text-lg md:text-2xl font-bold tracking-tighter whitespace-nowrap text-zinc-900 dark:text-white">
               FORPOST AERO SERVICE
             </span>
           </Link>
