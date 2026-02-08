@@ -920,7 +920,7 @@ const resources = {
             "Оқуды аяқтағаны туралы сертификат"
           ]
         }
->>>>>>> Photos-for-drones
+
       },
       products: {
         title: "Таңдаулы",
