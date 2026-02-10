@@ -9,7 +9,6 @@ import DroneCategory from "./pages/DroneCategory";
 import DroneDetail from "./pages/DroneDetail";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
-import Education from "./pages/Education.jsx";
 import ScrollToTop from './components/ScrollToTop.jsx';
 
 const LANG_MAP = { en: 'en', ru: 'ru', kk: 'kk' };
@@ -33,7 +32,6 @@ function App() {
             <Route path="/drones/:categorySlug" element={<DroneCategory />} />
             <Route path="/drones/:categorySlug/:droneSlug" element={<DroneDetail />} />
             <Route path="/service" element={<Service />} />
-            <Route path="/education" element={<Education />} />            
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

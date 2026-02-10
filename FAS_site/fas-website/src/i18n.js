@@ -68,8 +68,6 @@ const resources = {
         view: "View",
         cat_evtol: { name: "eVTOL", specs: "Efficiency and Multitasking" },
         cat_multirotor: { name: "Multi-rotor", specs: "Lightweight and Portable" },
-        solutions: "FPV Solutions",
-        solutions_desc: "FPV drones of any class and size to suit the customer's specific technical needs",
       },
       drones_category: {
         back: "Back",
@@ -393,18 +391,6 @@ const resources = {
         consult_title: "UAV Consulting",
         consult_desc: "Strategic planning for implementing drone technology into your existing industrial workflow.",
         btn_contact: "Contact us",
-        photo: {
-          title: "Aerial Photography",
-          desc: "High-quality aerial photography and videography for surveying territories, construction sites, industrial, and infrastructure facilities. Used for monitoring progress, analyzing object conditions, and creating visual materials."
-        },
-        thermal: {
-          title: "Thermal Imaging",
-          desc: "Conducting thermal surveys of buildings, utility networks, and equipment to identify heat loss, insulation defects, overheating, and hidden anomalies for technical diagnostics and engineering decisions."
-        },
-        model3d: {
-          title: "3D Modeling",
-          desc: "Building accurate three-dimensional models of buildings, structures, and territories based on aerial data. Results are used for design, urban analysis, visualization, measurements, and technical documentation."
-        }
       },
       contact: {
         title: "Contact",
@@ -480,10 +466,7 @@ const resources = {
         view: "Обзор",
         cat_evtol: { name: "eVTOL", specs: "Эффективность и мультизадачность" },
         cat_multirotor: { name: "Мультироторные", specs: "Легкость и портативность" },
-        solutions: "FPV Решения",
-        solutions_desc: "FPV-дроны любого класса и размера под конкретные технические задачи заказчика",
       },
-      
       drones_category: {
         back: "Назад",
         learn_more: "Подробнее",
@@ -803,19 +786,6 @@ const resources = {
         consult_title: "Консалтинг БПЛА",
         consult_desc: "Стратегическое планирование внедрения дрон-технологий в ваш рабочий процесс.",
         btn_contact: "Связаться с нами",
-        title_page: "УСЛУГИ",
-        photo: {
-          title: "Аэрофотосъемка",
-          desc: "Выполнение высококачественной фото- и видеосъемки с воздуха для обследования территорий, строительных площадок, промышленных и инфраструктурных объектов. Аэрофотосъемка используется для мониторинга хода работ, анализа состояния объектов, создания визуальных материалов и последующей обработки данных."
-        },
-        thermal: {
-          title: "Тепловизионная съемка",
-          desc: "Проведение тепловизионных обследований зданий, инженерных сетей и оборудования с целью выявления теплопотерь, дефектов теплоизоляции, перегревов и скрытых аномалий. Тепловизионная съемка позволяет оперативно получать данные для технической диагностики и принятия инженерных решений."
-        },
-        model3d: {
-          title: "Создание 3D-моделей",
-          desc: "Построение точных трёхмерных моделей зданий, сооружений и территорий на основе аэрофотоданных. Результаты используются для проектирования, градостроительного анализа, визуализации, измерений, подготовки технической и проектной документации."
-        }
       },
       contact: {
         title: "Свяжитесь",
@@ -856,71 +826,13 @@ const resources = {
           description: "Алматыда Forpost Aero Service-пен байланысыңыз. Мекенжай, телефон, email.",
         },
       },
-
-      nav: {
-        drones: "Өнімдер",
-        solutions: "Шешімдер",
-        service: "Қызметтер",
-        education: "Оқыту",
-        contact: "Контактілер",
-        get_started: "Бастау",
-      },
-
-      service: {
-        title_main: "Кәсіби",
-        title_sub: "Сервис",
-        maint_title: "Техникалық қызмет және жөндеу",
-        maint_desc: "Алматы қаласындағы БҰА құрылымдық және электронды жөндеу жұмыстарына Forpost ресми сертификаты.",
-        pilot_title: "Ұшқыштарды оқыту",
-        pilot_desc: "Кәсіпорын дрондарын басқару және ұшуға заңды рұқсат алу бойынша кешенді курстар.",
-        consult_title: "БҰА Консалтинг",
-        consult_desc: "Дрон технологиясын сіздің қолданыстағы өндірістік жұмыс процесіне енгізудің стратегиялық жоспары.",
-        btn_contact: "Бізге хабарласыңыз",
-        photo: {
-          title: "Аэрофототүсірілім",
-          desc: "Аумақтарды, құрылыс алаңдарын, өнеркәсіптік және инфрақұрылымдық объектілерді зерттеу үшін жоғары сапалы аэрофото және бейнетүсірілім жүргізу. Жұмыс барысын бақылау, нысандардың жай-күйін талдау үшін қолданылады."
-        },
-        thermal: {
-          title: "Тепловизиялық түсірілім",
-          desc: "Жылу шығынын, оқшаулау ақауларын, қызып кетуді және жасырын аномалияларды анықтау мақсатында ғимараттарды, инженерлік желілер мен жабдықтарды тепловизиялық тексеру. Техникалық диагностика үшін деректер алуға мүмкіндік береді."
-        },
-        model3d: {
-          title: "3D-модельдеу",
-          desc: "Аэрофотодеректер негізінде ғимараттардың, құрылыстар мен аумақтардың дәл үш өлшемді модельдерін құру. Нәтижелер жобалау, қала құрылысын талдау, визуализация және техникалық құжаттаманы дайындау үшін пайдаланылады."
-        }
-      },
-      
-
-      education: {
-        title: "БҰА операторларын даярлау (1-санат)",
-        description: "1-санат — бұл салмағы 25 кг-ға дейінгі ұшқышсыз ұшу аппараттарын белгіленген ережелер аясында заңды және қауіпсіз пайдалануға арналған операторларды даярлаудың бастапқы деңгейі.",
-        group: {
-          title: "20 адамға дейінгі топтық оқыту",
-          price: "Құны: бір адамға 45,000 ₸",
-          items: [
-            "1-санаттағы БҰА операторларын теориялық дайындау",
-            "ҚР әуе құқығының негіздері және әуе кеңістігін пайдалану ережелері",
-            "Әуе кеңістігінің құрылымы және ұшуды орындау процедуралары",
-            "Ұшуды жоспарлау және БҰА-ны дайындау",
-            "Авиациялық метеорология негіздері",
-            "Авиациялық қауіпсіздік және ұшу қауіпсіздігі",
-            "Қорытынды тестілеу және сертификат беру"
-          ]
-        },
-        individual: {
-          title: "Жеке оқыту",
-          price: "Құны: 250,000 ₸",
-          items: [
-            "Жеке оқыту кестесі",
-            "1-санат бойынша теориялық дайындықтың толық курсы",
-            "Нормативтік базаны және практикалық жағдайларды егжей-тегжейлі талдау",
-            "Ұшуды жоспарлау мен БҰА-ны пайдалануды тереңдетіп оқыту",
-            "Жеке нұсқаушының қолдауы",
-            "Қорытынды тестілеу",
-            "Оқуды аяқтағаны туралы сертификат"
-          ]
-        }
->>>>>>> Photos-for-drones
+      nav: { drones: "Дрондар", solutions: "Шешімдер", service: "Сервис", contact: "Контактілер", get_started: "Бастау" },
+      hero: {
+        title: "ҰШУДЫҢ",
+        subtitle: "ЖАҢА КЕЗЕҢІ",
+        desc: "Қазақстанның ең күрделі жағдайларына арналған авиациялық шешімдер.",
+        btn_explore: "Дрондарды көру",
+        btn_video: "Видеоны қарау",
       },
       products: {
         title: "Таңдаулы",
@@ -944,8 +856,6 @@ const resources = {
         view: "Көру",
         cat_evtol: { name: "eVTOL", specs: "Тиімді және тұрақты" },
         cat_multirotor: { name: "Мультироторлы", specs: "Жеңіл және тасымалды" },
-        solutions: "FPV шешімдері",
-        solutions_desc: "Тұтынушының нақты техникалық қажеттіліктеріне сәйкес келетін кез келген сыныптағы және өлшемдегі FPV дрондары",
       },
       drones_category: {
         back: "Артқа",
@@ -1250,6 +1160,17 @@ const resources = {
         },
       },
 
+      service: {
+        title_main: "Кәсіби",
+        title_sub: "Сервис",
+        maint_title: "Техникалық қызмет және жөндеу",
+        maint_desc: "Алматыдағы БПЛА конструкциясы мен электроникасын жөндеуге арналған ресми Forpost сертификаты.",
+        pilot_title: "Ұшқыштарды оқыту",
+        pilot_desc: "Кәсіпорын дрондарын пайдалану және ұшуға рұқсат алу бойынша кешенді курстар.",
+        consult_title: "БПЛА консалтингі",
+        consult_desc: "Дрон технологияларын жұмыс процесіне енгізуді стратегиялық жоспарлау.",
+        btn_contact: "Бізбен байланысыңыз",
+      },
       contact: {
         title: "Бізбен",
         us: "байланысыңыз",
