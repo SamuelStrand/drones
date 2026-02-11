@@ -136,11 +136,6 @@ export default function DroneDetail() {
             <Link to="/contact" className="flex-1 text-center px-8 py-4 rounded-xl bg-blue-700 dark:bg-blue-800 text-white hover:bg-blue-600 dark:hover:bg-blue-700 transition font-black uppercase text-sm tracking-[0.2em] shadow-lg shadow-blue-500/20">
               {t("drones_detail.contact_us")}
             </Link>
-            {drone.autelUrl && (
-              <a href={drone.autelUrl} target="_blank" rel="noopener noreferrer" className="flex-1 text-center px-8 py-4 rounded-xl border border-zinc-300 dark:border-white/20 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-white/5 transition font-bold uppercase text-sm tracking-widest">
-                {t("drones_detail.source_at_autel")}
-              </a>
-            )}
           </div>
 
           {/* Related Items */}

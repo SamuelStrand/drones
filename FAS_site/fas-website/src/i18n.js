@@ -94,7 +94,6 @@ const resources = {
       drones_detail: {
         highlights: "Highlights",
         specs: "Technical specifications",
-        source_at_autel: "Full specs at Autel",
         contact_us: "Contact us",
         back_to_category: "Back to category",
         other_in_category: "Other in this category",
@@ -549,7 +548,6 @@ const resources = {
       drones_detail: {
         highlights: "Ключевые особенности",
         specs: "Технические характеристики",
-        source_at_autel: "Полные характеристики на Autel",
         contact_us: "Связаться с нами",
         back_to_category: "Назад в категорию",
         other_in_category: "Другие в этой категории",
@@ -1037,7 +1035,6 @@ const resources = {
       drones_detail: {
         highlights: "Негізгі ерекшеліктер",
         specs: "Техникалық сипаттамалар",
-        source_at_autel: "Толық сипаттама Autel-де",
         contact_us: "Бізбен хабарласыңыз",
         back_to_category: "Санатқа оралу",
         other_in_category: "Осы санаттағы басқалар",
