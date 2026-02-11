@@ -457,6 +457,19 @@ const resources = {
             "Final testing",
             "Certificate of completion"
           ]
+        },
+        integration: {
+          title: "TRAINING PROCESS INTEGRATION",
+          intro: "implements comprehensive UAV operator training into educational programs, after which students can receive a state-standard certificate and the right to operate UAVs.",
+          include_title: "Integration includes:",
+          list: [
+            "conducting theoretical classes on the operation of unmanned aircraft systems;",
+            "study of air law and rules for using the airspace of the Republic of Kazakhstan;",
+            "basics of aviation security and flight safety;",
+            "basics of flight planning and UAV operation;",
+            "final testing and certification of students."
+          ],
+          kazgasa_text: "The program has already been successfully integrated into KAZGASA, where students undergo training as part of the educational process and gain basic knowledge necessary for the legal and safe operation of UAVs. This integration forms a fundamental theoretical base for students and serves as the foundation for further professional development in the field of unmanned aviation."
         }
       },
       contact: {
@@ -927,6 +940,19 @@ const resources = {
             "Итоговое тестирование",
             "Сертификат о прохождении обучения"
           ]
+        },
+        integration: {
+          title: "ИНТЕГРАЦИЯ ПРОЦЕССОВ ОБУЧЕНИЯ",
+          intro: "Forpost Aero Service внедряет комплексную подготовку операторов БПЛА в образовательные программы, по итогам которой слушатели могут получить сертификат государственного образца и право управления БПЛА.",
+          include_title: "Интеграция включает:",
+          list: [
+            "проведение теоретических занятий по эксплуатации беспилотных авиационных систем;",
+            "изучение воздушного права и правил использования воздушного пространства Республики Казахстан;",
+            "основы авиационной безопасности и безопасности полетов;",
+            "основы планирования полётов и эксплуатации БПЛА;",
+            "итоговое тестирование и сертификацию обучающихся."
+          ],
+          kazgasa_text: "Программа уже успешно интегрирована в КАЗГАСА, где студенты проходят обучение в рамках учебного процесса и получают базовые знания, необходимые для законной и безопасной эксплуатации БПЛА. Данная интеграция формирует у обучающихся фундаментальную теоретическую базу и является основой для дальнейшего профессионального развития в сфере беспилотной авиации."
         }
       },
       contact: {
@@ -1030,6 +1056,19 @@ const resources = {
             "Қорытынды тестілеу",
             "Оқуды аяқтағаны туралы сертификат"
           ]
+        },
+        integration: {
+          title: "ОҚУ ПРОЦЕСТЕРІН ИНТЕГРАЦИЯЛАУ",
+          intro: "БПЛА операторларын даярлаудың кешенді бағдарламаларын білім беру бағдарламаларына енгізеді, оның қорытындысы бойынша тыңдаушылар мемлекеттік үлгідегі сертификат пен БПЛА басқару құқығын ала алады.",
+          include_title: "Интеграция келесілерді қамтиды:",
+          list: [
+            "ұшқышсыз авиациялық жүйелерді пайдалану бойынша теориялық сабақтар өткізу;",
+            "әуе құқығын және Қазақстан Республикасының әуе кеңістігін пайдалану ережелерін зерделеу;",
+            "авиациялық қауіпсіздік және ұшу қауіпсіздігінің негіздері;",
+            "ұшуды жоспарлау және БПЛА пайдалану негіздері;",
+            "қорытынды тестілеу және білім алушыларды сертификаттау."
+          ],
+          kazgasa_text: "Бағдарлама ҚАЗҚСӘА-ға (КАЗГАСА) сәтті интеграцияланған, онда студенттер оқу процесі аясында білім алып, БПЛА-ны заңды және қауіпсіз пайдалану үшін қажетті базалық білім алады. Бұл интеграция білім алушыларда іргелі теориялық базаны қалыптастырады және ұшқышсыз авиация саласындағы одан арғы кәсіби дамудың негізі болып табылады."
         }
       },
       products: {
