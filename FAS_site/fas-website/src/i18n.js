@@ -76,6 +76,24 @@ const resources = {
         cat_multirotor: { name: "Multi-rotor", specs: "Lightweight and Portable" },
         solutions: "FPV Solutions",
         solutions_desc: "FPV drones of any class and size to suit the customer's specific technical needs",
+        solutions_title: "TRAINING MICRO-DRONE - BETAFPV AIR65 (FREESTYLE, BETAFPV CETUS) KIT PRO",
+        solutions_subtitle: "Lightweight and safe FPV drone for initial training. Suitable for indoor activities and training classes.",
+        fpv_goggles: "FPV GOGGLES",
+        controllers: "REMOTE CONTROLLERS",
+        goggles_list: [
+          "Skyzone SKY04X OLED — High contrast OLED displays",
+          "Clear image and comfort for long-term use Skyzone SKY03O OLED",
+          "Compact version with OLED displays — Suitable for mobile FPV classes Fat Shark HDO2",
+          "High resolution OLED displays — Popular among professional FPV pilots DJI Goggles V2 / Goggles 2 (optional)",
+          "For digital FPV systems — Used in high-quality and hybrid solutions"
+        ],
+        controllers_list: [
+          "Radiomaster Boxer ELRS — ELRS protocol support — low latency and high reliability",
+          "Universal solution for training and professional FPV systems Radiomaster TX16S MKII (ELRS / Multi-protocol)",
+          "Flagship controller — Suitable for training centers and advanced FPV systems Radiomaster Zorro ELRS",
+          "Compact form factor — Convenient for beginners and mobile sets TBS Tango 2 (Crossfire) (optional)",
+          "Minimum latency — Used in professional long-range FPV systems"
+        ]
       },
       drones_category: {
         back: "Back",
@@ -439,6 +457,19 @@ const resources = {
             "Final testing",
             "Certificate of completion"
           ]
+        },
+        integration: {
+          title: "TRAINING PROCESS INTEGRATION",
+          intro: "implements comprehensive UAV operator training into educational programs, after which students can receive a state-standard certificate and the right to operate UAVs.",
+          include_title: "Integration includes:",
+          list: [
+            "conducting theoretical classes on the operation of unmanned aircraft systems;",
+            "study of air law and rules for using the airspace of the Republic of Kazakhstan;",
+            "basics of aviation security and flight safety;",
+            "basics of flight planning and UAV operation;",
+            "final testing and certification of students."
+          ],
+          kazgasa_text: "The program has already been successfully integrated into KAZGASA, where students undergo training as part of the educational process and gain basic knowledge necessary for the legal and safe operation of UAVs. This integration forms a fundamental theoretical base for students and serves as the foundation for further professional development in the field of unmanned aviation."
         }
       },
       contact: {
@@ -525,10 +556,28 @@ const resources = {
       drones_page: {
         desc: "Точечная инженерия для индустриального ландшафта Казахстана.",
         view: "Обзор",
-        cat_evtol: { name: "eVTOL", specs: "Эффективность и мультизадачность" },
+        cat_evtol: { name: "Самолетного типа", specs: "Эффективность и мультизадачность" },
         cat_multirotor: { name: "Мультироторные", specs: "Легкость и портативность" },
         solutions: "FPV Решения",
         solutions_desc: "FPV-дроны любого класса и размера под конкретные технические задачи заказчика",
+        solutions_title: "УЧЕБНЫЙ МИКРО-ДРОН - BETAFPV AIR65 (FREESTYLE, BETAFPV CETUS) KIT PRO",
+        solutions_subtitle: "Лёгкий и безопасный FPV-дрон для начального обучения. Подходит для занятий в помещении и тренировочных классов.",
+        fpv_goggles: "FPV-ОЧКИ",
+        controllers: "ПУЛЬТЫ УПРАВЛЕНИЯ",
+        goggles_list: [
+          "Skyzone SKY04X OLED — OLED-дисплеи с высокой контрастностью",
+          "Чёткое изображение и комфорт при длительном использовании Skyzone SKY03O OLED",
+          "Компактная версия с OLED-дисплеями — Подходит для учебных и мобильных FPV-классов Fat Shark HDO2",
+          "OLED-дисплеи высокого разрешения — Популярны среди профессиональных FPV-пилотов DJI Goggles V2 / Goggles 2 (опционально)",
+          "Для цифровых FPV-систем — Используются в высококачественных и гибридных решениях"
+        ],
+        controllers_list: [
+          "Radiomaster Boxer ELRS — поддержка протокола ELRS — низкая задержка и высокая надёжность связи",
+          "Универсальное решение для учебных и профессиональных FPV-систем Radiomaster TX16S MKII (ELRS / Multi-protocol)",
+          "Флагманский пульт — Подходит для учебных центров и расширенных FPV-систем Radiomaster Zorro ELRS",
+          "Компактный форм-фактор — Удобен для начинающих и мобильных комплектов TBS Tango 2 (Crossfire) (опционально)",
+          "Минимальная задержка — Используется в профессиональных дальнобойных FPV-системах"
+        ]
       },
       
       drones_category: {
@@ -555,7 +604,7 @@ const resources = {
       drones_catalog: {
         categories: {
           multirotor: { title: "Мультироторные", desc: "Промышленные платформы для инспекций, картографии и миссий." },
-          evtol: { title: "eVTOL", desc: "VTOL платформы для дальних миссий." },
+          evtol: { title: "Самолетного типа", desc: "VTOL платформы для дальних миссий." },
         },
         items: {
           evo_lite_enterprise: {
@@ -891,6 +940,19 @@ const resources = {
             "Итоговое тестирование",
             "Сертификат о прохождении обучения"
           ]
+        },
+        integration: {
+          title: "ИНТЕГРАЦИЯ ПРОЦЕССОВ ОБУЧЕНИЯ",
+          intro: "Forpost Aero Service внедряет комплексную подготовку операторов БПЛА в образовательные программы, по итогам которой слушатели могут получить сертификат государственного образца и право управления БПЛА.",
+          include_title: "Интеграция включает:",
+          list: [
+            "проведение теоретических занятий по эксплуатации беспилотных авиационных систем;",
+            "изучение воздушного права и правил использования воздушного пространства Республики Казахстан;",
+            "основы авиационной безопасности и безопасности полетов;",
+            "основы планирования полётов и эксплуатации БПЛА;",
+            "итоговое тестирование и сертификацию обучающихся."
+          ],
+          kazgasa_text: "Программа уже успешно интегрирована в КАЗГАСА, где студенты проходят обучение в рамках учебного процесса и получают базовые знания, необходимые для законной и безопасной эксплуатации БПЛА. Данная интеграция формирует у обучающихся фундаментальную теоретическую базу и является основой для дальнейшего профессионального развития в сфере беспилотной авиации."
         }
       },
       contact: {
@@ -994,6 +1056,19 @@ const resources = {
             "Қорытынды тестілеу",
             "Оқуды аяқтағаны туралы сертификат"
           ]
+        },
+        integration: {
+          title: "ОҚУ ПРОЦЕСТЕРІН ИНТЕГРАЦИЯЛАУ",
+          intro: "БПЛА операторларын даярлаудың кешенді бағдарламаларын білім беру бағдарламаларына енгізеді, оның қорытындысы бойынша тыңдаушылар мемлекеттік үлгідегі сертификат пен БПЛА басқару құқығын ала алады.",
+          include_title: "Интеграция келесілерді қамтиды:",
+          list: [
+            "ұшқышсыз авиациялық жүйелерді пайдалану бойынша теориялық сабақтар өткізу;",
+            "әуе құқығын және Қазақстан Республикасының әуе кеңістігін пайдалану ережелерін зерделеу;",
+            "авиациялық қауіпсіздік және ұшу қауіпсіздігінің негіздері;",
+            "ұшуды жоспарлау және БПЛА пайдалану негіздері;",
+            "қорытынды тестілеу және білім алушыларды сертификаттау."
+          ],
+          kazgasa_text: "Бағдарлама ҚАЗҚСӘА-ға (КАЗГАСА) сәтті интеграцияланған, онда студенттер оқу процесі аясында білім алып, БПЛА-ны заңды және қауіпсіз пайдалану үшін қажетті базалық білім алады. Бұл интеграция білім алушыларда іргелі теориялық базаны қалыптастырады және ұшқышсыз авиация саласындағы одан арғы кәсіби дамудың негізі болып табылады."
         }
       },
       products: {
@@ -1016,10 +1091,28 @@ const resources = {
       drones_page: {
         desc: "Қазақстанның индустриялық ландшафтына арналған дәлдік инженерия.",
         view: "Көру",
-        cat_evtol: { name: "eVTOL", specs: "Тиімді және тұрақты" },
+        cat_evtol: { name: "Ұшақ түрі", specs: "Тиімді және тұрақты" },
         cat_multirotor: { name: "Мультироторлы", specs: "Жеңіл және тасымалды" },
         solutions: "FPV шешімдері",
         solutions_desc: "Тұтынушының нақты техникалық қажеттіліктеріне сәйкес келетін кез келген сыныптағы және өлшемдегі FPV дрондары",
+        solutions_title: "ОҚУ МИКРО-ДРОНЫ - BETAFPV AIR65 (FREESTYLE, BETAFPV CETUS) KIT PRO",
+        solutions_subtitle: "Бастапқы оқытуға арналған жеңіл және қауіпсіз FPV дроны. Ғимарат ішіндегі сабақтар мен жаттығу сыныптарына қолайлы.",
+        fpv_goggles: "FPV-КӨЗІЛДІРІКТЕРІ",
+        controllers: "БАСҚАРУ ПУЛЬТТЕРІ",
+        goggles_list: [
+          "Skyzone SKY04X OLED — Жоғары контрастылы OLED-дисплейлері",
+          "Skyzone SKY03O OLED ұзақ уақыт пайдалану кезіндегі анық кескін және жайлылық",
+          "OLED-дисплейлері бар ықшам нұсқа — Оқу және мобильді FPV-кластарына арналған Fat Shark HDO2",
+          "Жоғары ажыратымдылықтағы OLED-дисплейлері — Кәсіби FPV-ұшқыштар арасында танымал DJI Goggles V2 / Goggles 2 (қосымша)",
+          "Сандық FPV-жүйелері үшін — Жоғары сапалы және гибридті шешімдерде қолданылады"
+        ],
+        controllers_list: [
+          "Radiomaster Boxer ELRS — ELRS хаттамасын қолдау — төмен кідіріс және жоғары байланыс сенімділігі",
+          "Оқу және кәсіби FPV-жүйелеріне арналған әмбебап шешім Radiomaster TX16S MKII (ELRS / Multi-protocol)",
+          "Флагмандық пульт — Оқу орталықтары мен кеңейтілген FPV-жүйелеріне қолайлы Radiomaster Zorro ELRS",
+          "Ықшам форма-фактор — Жаңа бастаушылар мен мобильді жиынтықтарға ыңғайлы TBS Tango 2 (Crossfire) (қосымша)",
+          "Минималды кідіріс — Кәсіби алыс қашықтықтағы FPV-жүйелерінде қолданылады"
+        ]
       },
       drones_category: {
         back: "Артқа",
@@ -1042,7 +1135,7 @@ const resources = {
       drones_catalog: {
         categories: {
           multirotor: { title: "Мультироторлы", desc: "Инспекция, картография және миссияларға арналған өнеркәсіптік платформалар." },
-          evtol: { title: "eVTOL", desc: "Ұзақ қашықтықтағы миссияларға арналған VTOL платформалары." },
+          evtol: { title: "Ұшақ түрі", desc: "Ұзақ қашықтықтағы миссияларға арналған VTOL платформалары." },
         },
         items: {
           evo_lite_enterprise: {
