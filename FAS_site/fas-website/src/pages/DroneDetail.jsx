@@ -140,6 +140,7 @@ export default function DroneDetail() {
   const shortLabel = t(`drones_catalog.items.${drone.key}.short_label`, { defaultValue: name });
   const descriptionText = t(drone.description);
   const topSpecs = Array.isArray(drone.specs) ? drone.specs.slice(0, 4) : [];
+  const performanceSpecs = Array.isArray(drone.specs) ? drone.specs.slice(0, 4) : [];
   const highlightsText = Array.isArray(drone.highlights) ? drone.highlights.map((k) => t(k)) : [];
 
   return (
@@ -271,6 +272,41 @@ export default function DroneDetail() {
               </div>
             </div>
           </section>
+
+          {/* Performance banner */}
+          {performanceSpecs.length > 0 && (
+            <section className="mt-20 rounded-[32px] overflow-hidden relative bg-zinc-900 text-white">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={drone.image ? { backgroundImage: `url(${drone.image})` } : undefined}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/55 to-black/35" />
+
+              <div className="relative px-6 md:px-10 py-16 md:py-20">
+                <div className="max-w-5xl mx-auto text-center">
+                  <div className="text-sm font-semibold tracking-[0.3em] uppercase text-white/80">
+                    {t("drones_detail.performance_title")}
+                  </div>
+                  <p className="mt-4 text-base md:text-lg text-white/80 max-w-3xl mx-auto">
+                    {t("drones_detail.performance_subtitle")}
+                  </p>
+                </div>
+
+                <div className="mt-10 md:mt-14 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 text-center">
+                  {performanceSpecs.map((row, idx) => (
+                    <div key={idx} className="space-y-1">
+                      <div className="text-xl md:text-2xl font-black tracking-tight">
+                        {t(row.value)}
+                      </div>
+                      <div className="text-[11px] md:text-xs font-semibold uppercase tracking-[0.28em] text-white/80">
+                        {t(row.label)}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
 
           {/* Technical Specifications */}
           <section id="specs" className="scroll-mt-32 pt-20">
