@@ -418,16 +418,42 @@ const resources = {
         btn_contact: "Contact us",
         photo: {
           title: "Aerial Photography",
-          desc: "High-quality aerial photography and videography for surveying territories, construction sites, industrial, and infrastructure facilities. Used for monitoring progress, analyzing object conditions, and creating visual materials."
+          desc: "High-quality aerial photography and videography for surveying territories and facilities.",
+          full_desc: "We provide high-resolution aerial photography and videography using state-of-the-art UAVs. Our services are essential for monitoring construction progress, analyzing the condition of industrial objects, and creating high-impact visual materials for marketing and documentation.",
+          features: [
+            "4K & 5.4K Video Recording",
+            "High-Resolution Orthomosaics",
+            "Construction Progress Monitoring",
+            "Promotional Videography"
+          ]
         },
         thermal: {
           title: "Thermal Imaging",
-          desc: "Conducting thermal surveys of buildings, utility networks, and equipment to identify heat loss, insulation defects, overheating, and hidden anomalies for technical diagnostics and engineering decisions."
+          desc: "Identifying heat loss and insulation defects using advanced thermal sensors.",
+          full_desc: "Our thermal imaging services utilize high-precision infrared sensors to detect temperature anomalies that are invisible to the naked eye. We help businesses identify energy leaks, electrical overheating, and structural defects in utility networks and industrial equipment.",
+          features: [
+            "Heat Loss Analysis",
+            "Electrical Grid Inspection",
+            "Roof & Insulation Diagnostics",
+            "Equipment Overheat Detection"
+          ]
         },
         model3d: {
           title: "3D Modeling",
-          desc: "Building accurate three-dimensional models of buildings, structures, and territories based on aerial data. Results are used for design, urban analysis, visualization, measurements, and technical documentation."
+          desc: "Building accurate three-dimensional models of buildings and territories.",
+          full_desc: "Using photogrammetry and LiDAR data, we create highly accurate digital twins of buildings, industrial structures, and large land areas. These models are compatible with BIM software and are used for precise measurements, urban planning, and technical analysis.",
+          features: [
+            "Digital Twin Creation",
+            "BIM Integration",
+            "Volumetric Measurements",
+            "Topographic Mapping"
+          ]
         }
+      },
+      common: {
+        details: "Details",
+        back_to_services: "Back to services",
+        overview: "Service Overview"
       },
       education: {
         title: "Training of UAV Operators (Category 1)",
@@ -888,30 +914,56 @@ const resources = {
         },
       },
 
-      service: {
-        title_main: "Профессиональный",
-        title_sub: "Сервис",
-        maint_title: "Техобслуживание и ремонт",
-        maint_desc: "Официальная сертификация Forpost по ремонту конструкции и электроники БПЛА в Алматы.",
-        pilot_title: "Обучение пилотов",
-        pilot_desc: "Комплексные курсы по эксплуатации промышленных дронов и получению разрешений.",
-        consult_title: "Консалтинг БПЛА",
-        consult_desc: "Стратегическое планирование внедрения дрон-технологий в ваш рабочий процесс.",
-        btn_contact: "Связаться с нами",
-        title_page: "УСЛУГИ",
-        photo: {
-          title: "Аэрофотосъемка",
-          desc: "Выполнение высококачественной фото- и видеосъемки с воздуха для обследования территорий, строительных площадок, промышленных и инфраструктурных объектов. Аэрофотосъемка используется для мониторинга хода работ, анализа состояния объектов, создания визуальных материалов и последующей обработки данных."
-        },
-        thermal: {
-          title: "Тепловизионная съемка",
-          desc: "Проведение тепловизионных обследований зданий, инженерных сетей и оборудования с целью выявления теплопотерь, дефектов теплоизоляции, перегревов и скрытых аномалий. Тепловизионная съемка позволяет оперативно получать данные для технической диагностики и принятия инженерных решений."
-        },
-        model3d: {
-          title: "Создание 3D-моделей",
-          desc: "Построение точных трёхмерных моделей зданий, сооружений и территорий на основе аэрофотоданных. Результаты используются для проектирования, градостроительного анализа, визуализации, измерений, подготовки технической и проектной документации."
-        }
+    common: {
+      details: "Подробнее",
+      back_to_services: "Назад к услугам",
+      overview: "Обзор услуги"
+    },
+    service: {
+      title_main: "Профессиональный",
+      title_sub: "Сервис",
+      maint_title: "Техническое обслуживание и ремонт",
+      maint_desc: "Официальная сертификация Forpost по ремонту конструкции и электроники БПЛА в Алматы.",
+      pilot_title: "Обучение пилотов",
+      pilot_desc: "Комплексные курсы по эксплуатации промышленных дронов и получению разрешений на полеты.",
+      consult_title: "Консалтинг по БПЛА",
+      consult_desc: "Стратегическое планирование внедрения технологий БПЛА в ваш промышленный рабочий процесс.",
+      btn_contact: "Связаться с нами",
+      photo: {
+        title: "Аэрофотосъемка",
+        desc: "Высококачественная аэрофото- и видеосъемка для обследования территорий и объектов.",
+        full_desc: "Мы предоставляем услуги аэрофото- и видеосъемки высокого разрешения с использованием современных БПЛА. Наши услуги необходимы для мониторинга хода строительства, анализа состояния промышленных объектов и создания эффектных визуальных материалов.",
+        features: [
+          "Запись видео в 4K и 5.4K",
+          "Ортофотопланы высокого разрешения",
+          "Мониторинг прогресса строительства",
+          "Рекламная видеосъемка"
+        ]
       },
+      thermal: {
+        title: "Тепловизионная съемка",
+        desc: "Выявление теплопотерь и дефектов изоляции с помощью передовых тепловых датчиков.",
+        full_desc: "Наши услуги тепловизионной съемки используют высокоточные инфракрасные датчики для обнаружения температурных аномалий, невидимых невооруженным глазом. Мы помогаем предприятиям выявлять утечки энергии, перегрев электросетей и структурные дефекты.",
+        features: [
+          "Анализ теплопотерь",
+          "Инспекция электрических сетей",
+          "Диагностика кровли и изоляции",
+          "Обнаружение перегрева оборудования"
+        ]
+      },
+      model3d: {
+        title: "3D Моделирование",
+        desc: "Построение точных трехмерных моделей зданий, сооружений и территорий.",
+        full_desc: "Используя данные фотограмметрии и LiDAR, мы создаем высокоточные цифровые двойники зданий и промышленных объектов. Эти модели совместимы с программным обеспечением BIM и используются для точных измерений и городского планирования.",
+        features: [
+          "Создание цифровых двойников",
+          "Интеграция с BIM",
+          "Объемные измерения",
+          "Топографическое картографирование"
+        ]
+      }
+    },
+  
       education: {
         title: "ОБУЧЕНИЕ ОПЕРАТОРОВ БПЛА (КАТЕГОРИЯ 1)",
         description: "Категория 1 — это начальный уровень подготовки операторов беспилотных летательных аппаратов, предназначенный для законной и безопасной эксплуатации БПЛА массой до 25 кг в пределах установленных правил.",
@@ -1003,30 +1055,55 @@ const resources = {
         get_started: "Бастау",
       },
 
-      service: {
-        title_main: "Кәсіби",
-        title_sub: "Сервис",
-        maint_title: "Техникалық қызмет және жөндеу",
-        maint_desc: "Алматы қаласындағы БҰА құрылымдық және электронды жөндеу жұмыстарына Forpost ресми сертификаты.",
-        pilot_title: "Ұшқыштарды оқыту",
-        pilot_desc: "Кәсіпорын дрондарын басқару және ұшуға заңды рұқсат алу бойынша кешенді курстар.",
-        consult_title: "БҰА Консалтинг",
-        consult_desc: "Дрон технологиясын сіздің қолданыстағы өндірістік жұмыс процесіне енгізудің стратегиялық жоспары.",
-        btn_contact: "Бізге хабарласыңыз",
-        photo: {
-          title: "Аэрофототүсірілім",
-          desc: "Аумақтарды, құрылыс алаңдарын, өнеркәсіптік және инфрақұрылымдық объектілерді зерттеу үшін жоғары сапалы аэрофото және бейнетүсірілім жүргізу. Жұмыс барысын бақылау, нысандардың жай-күйін талдау үшін қолданылады."
-        },
-        thermal: {
-          title: "Тепловизиялық түсірілім",
-          desc: "Жылу шығынын, оқшаулау ақауларын, қызып кетуді және жасырын аномалияларды анықтау мақсатында ғимараттарды, инженерлік желілер мен жабдықтарды тепловизиялық тексеру. Техникалық диагностика үшін деректер алуға мүмкіндік береді."
-        },
-        model3d: {
-          title: "3D-модельдеу",
-          desc: "Аэрофотодеректер негізінде ғимараттардың, құрылыстар мен аумақтардың дәл үш өлшемді модельдерін құру. Нәтижелер жобалау, қала құрылысын талдау, визуализация және техникалық құжаттаманы дайындау үшін пайдаланылады."
-        }
+    common: {
+      details: "Толығырақ",
+      back_to_services: "Қызметтерге қайта оралу",
+      overview: "Қызметке шолу"
+    },
+    service: {
+      title_main: "Кәсіби",
+      title_sub: "Сервис",
+      maint_title: "Техникалық қызмет көрсету және жөндеу",
+      maint_desc: "Алматыдағы БПЛА конструкциясы мен электроникасын жөндеу бойынша ресми Forpost сертификаты.",
+      pilot_title: "Ұшқыштарды оқыту",
+      pilot_desc: "Өнеркәсіптік дрондарды пайдалану және ұшуға рұқсат алу бойынша кешенді курстар.",
+      consult_title: "БПЛА консалтингі",
+      consult_desc: "БПЛА технологияларын өндірістік жұмыс процесіне енгізуді стратегиялық жоспарлау.",
+      btn_contact: "Бізбен байланысу",
+      photo: {
+        title: "Аэрофототүсірілім",
+        desc: "Аумақтар мен нысандарды зерттеуге арналған жоғары сапалы аэрофото және бейне түсірілім.",
+        full_desc: "Біз заманауи БПЛА-ларды қолдана отырып, жоғары ажыратымдылықтағы аэрофото және бейне түсірілімдерді ұсынамыз. Бұл қызметтер құрылыс барысын бақылау, өндірістік нысандардың жай-күйін талдау үшін қажет.",
+        features: [
+          "4K және 5.4K форматында бейне жазу",
+          "Жоғары ажыратымдылықтағы ортофотожоспарлар",
+          "Құрылыс барысының мониторингі",
+          "Жарнамалық бейнетүсірілім"
+        ]
       },
-      
+      thermal: {
+        title: "Тепловизиялық түсірілім",
+        desc: "Жетілдірілген жылу датчиктерінің көмегімен жылу шығынын және оқшаулау ақауларын анықтау.",
+        full_desc: "Біздің тепловизиялық түсірілім қызметтеріміз көзге көрінбейтін температуралық ауытқуларды анықтау үшін жоғары дәлдіктегі инфрақызыл датчиктерді пайдаланады. Біз энергия ағып кетуін және жабдықтардың қызып кетуін анықтауға көмектесеміз.",
+        features: [
+          "Жылу шығынын талдау",
+          "Электр желілерін тексеру",
+          "Шатыр мен оқшаулау диагностикасы",
+          "Жабдықтың қызып кетуін анықтау"
+        ]
+      },
+      model3d: {
+        title: "3D Модельдеу",
+        desc: "Ғимараттар мен аумақтардың дәл үш өлшемді модельдерін құру.",
+        full_desc: "Фотограмметрия және LiDAR деректерін пайдалана отырып, біз ғимараттар мен өндірістік нысандардың жоғары дәлдіктегі цифрлық егіздерін жасаймыз. Бұл модельдер BIM бағдарламалық жасақтамасымен үйлесімді.",
+        features: [
+          "Цифрлық егіздерді жасау",
+          "BIM интеграциясы",
+          "Көлемді өлшеулер",
+          "Топографиялық картаға түсіру"
+        ]
+      }
+    },
 
       education: {
         title: "БҰА операторларын даярлау (1-санат)",
