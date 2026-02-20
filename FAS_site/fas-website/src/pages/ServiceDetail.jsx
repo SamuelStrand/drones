@@ -8,12 +8,18 @@ export default function ServiceDetail() {
   const { id } = useParams();
   const { t } = useTranslation();
 
-  // Mock mapping for images (In a real app, move this to a constants file)
+  const videoData = {
+    photo: "dQw4w9WgXcQ",   
+    thermal: "yPYZpwSpKAg",
+    model3d: "V-_O7nl0Ii0" 
+  };
   const images = {
     photo: '/Picture1.png',
     thermal: '/Picture2.png',
     model3d: '/Picture3.png'
   };
+
+  const currentVideoId = videoData[id];
 
   return (
     <PageTransition>
@@ -70,21 +76,23 @@ export default function ServiceDetail() {
           {/* Video / Media Side */}
           <div className="space-y-6">
             <div className="aspect-video bg-zinc-100 dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200 dark:border-white/10 shadow-2xl relative group">
-              {/* Future Video Implementation */}
-             <div className="aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-               <iframe
-                  width="100%"
-                  height="100%"
-                  /* Note the autoplay=1 and mute=0 parameters */
-                  src={`https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0&rel=0&modestbranding=1`}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  /* allow="autoplay" is required for the browser to permit the command */
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </div>
+            
+               {currentVideoId ? (
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${currentVideoId}?autoplay=1&mute=1&rel=0&modestbranding=1`}
+                    title={t(`service.${id}.title`)}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                    ) : (
+                    <div className="flex items-center justify-center h-full text-zinc-500">
+                      {t('common.video_coming_soon')}
+                    </div>)
+                }
+             
             </div>
           </div>
         </div>
