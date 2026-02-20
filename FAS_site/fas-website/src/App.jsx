@@ -8,6 +8,7 @@ import Drones from "./pages/Drones.jsx";
 import DroneCategory from "./pages/DroneCategory";
 import DroneDetail from "./pages/DroneDetail";
 import Service from "./pages/Service";
+import ServiceDetail from './pages/ServiceDetail.jsx';
 import Contact from "./pages/Contact";
 import Education from "./pages/Education.jsx";
 import ScrollToTop from './components/ScrollToTop.jsx';
@@ -33,6 +34,7 @@ function App() {
             <Route path="/drones/:categorySlug" element={<DroneCategory />} />
             <Route path="/drones/:categorySlug/:droneSlug" element={<DroneDetail />} />
             <Route path="/service" element={<Service />} />
+            <Route path="/service/:id" element={<ServiceDetail />} />
             <Route path="/education" element={<Education />} />            
             <Route path="/contact" element={<Contact />} />
           </Routes>
