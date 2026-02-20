@@ -10,7 +10,7 @@ export default function ServiceDetail() {
 
   const videoData = {
     photo: "dQw4w9WgXcQ",   
-    thermal: "yPYZpwSpKAg",
+    thermal: "rcyIdG2GOwU",
     model3d: "V-_O7nl0Ii0" 
   };
   const images = {
