@@ -71,14 +71,20 @@ export default function ServiceDetail() {
           <div className="space-y-6">
             <div className="aspect-video bg-zinc-100 dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200 dark:border-white/10 shadow-2xl relative group">
               {/* Future Video Implementation */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
-                   <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-white border-b-[10px] border-b-transparent ml-2" />
-                </div>
+             <div className="aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+               <iframe
+                  width="100%"
+                  height="100%"
+                  /* Note the autoplay=1 and mute=0 parameters */
+                  src={`https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0&rel=0&modestbranding=1`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  /* allow="autoplay" is required for the browser to permit the command */
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
               </div>
-              <p className="absolute bottom-6 w-full text-center text-xs uppercase tracking-widest opacity-50">
-                Video Presentation Coming Soon
-              </p>
             </div>
           </div>
         </div>
