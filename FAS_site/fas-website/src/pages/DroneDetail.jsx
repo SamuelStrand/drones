@@ -314,16 +314,6 @@ export default function DroneDetail() {
                 <h2 className="mt-3 text-2xl md:text-3xl font-black uppercase tracking-tight">{t("drones_detail.specs")}</h2>
               </div>
 
-              {drone.autelUrl && (
-                <a
-                  href={drone.autelUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-zinc-200 dark:border-white/10 text-zinc-700 dark:text-zinc-200 hover:border-zinc-300 dark:hover:border-white/20 transition text-[11px] font-black uppercase tracking-[0.24em]"
-                >
-                  {t("drones_detail.open_specs_source")} →
-                </a>
-              )}
             </div>
 
             {drone.specs && drone.specs.length > 0 ? (

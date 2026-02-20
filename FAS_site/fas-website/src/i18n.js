@@ -117,7 +117,6 @@ const resources = {
         other_in_category: "Other in this category",
         performance_title: "Outstanding Performance",
         performance_subtitle: "Key capabilities that define this platform in real missions.",
-        open_specs_source: "Open official specs",
         no_highlights: "Highlights will be added soon.",
         no_specs: "Specifications will be added soon.",
         tabs: {
@@ -657,7 +656,6 @@ const resources = {
         other_in_category: "Другие в этой категории",
         performance_title: "Выдающаяся производительность",
         performance_subtitle: "Ключевые параметры, которые определяют эффективность платформы в реальных задачах.",
-        open_specs_source: "Открыть характеристики",
         no_highlights: "Список особенностей появится позже.",
         no_specs: "Характеристики появятся позже.",
         tabs: {
@@ -1268,7 +1266,6 @@ const resources = {
         other_in_category: "Осы санаттағы басқалар",
         performance_title: "Тамаша өнімділік",
         performance_subtitle: "Нақты миссияларда платформаның тиімділігін анықтайтын негізгі параметрлер.",
-        open_specs_source: "Ресми сипаттамалар",
         no_highlights: "Ерекшеліктер кейінірек қосылады.",
         no_specs: "Сипаттамалар кейінірек қосылады.",
         tabs: {
