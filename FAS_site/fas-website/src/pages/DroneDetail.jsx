@@ -421,7 +421,7 @@ export default function DroneDetail() {
               {t("drones_detail.sections.faq_title")}
             </h2>
 
-            <div className="mt-8 grid lg:grid-cols-2 gap-6">
+            <div className="mt-8 grid lg:grid-cols-2 gap-6 items-start">
               {["q1", "q2", "q3", "q4"].map((k) => (
                 <details
                   key={k}
