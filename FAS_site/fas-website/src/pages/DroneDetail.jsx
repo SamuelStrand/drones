@@ -37,9 +37,11 @@ function FeatureGrid({ items }) {
     <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-6">
       {items.map((text, idx) => (
         <div key={idx} className="flex items-start gap-4">
-          <div className="mt-1 h-10 w-10 rounded-full bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 flex items-center justify-center font-black">
-            {idx + 1}
+          {/* FIX #2: make number badges always perfect circles + same visual width for digits */}
+          <div className="mt-1 flex-none grid place-items-center h-10 w-10 min-w-10 rounded-full bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 font-black leading-none tabular-nums">
+            <span className="text-[13px]">{idx + 1}</span>
           </div>
+
           <div className="text-zinc-700 dark:text-zinc-200 font-medium leading-relaxed">
             {text}
           </div>
@@ -50,8 +52,9 @@ function FeatureGrid({ items }) {
 }
 
 function AnchorTabs({ tabs, activeId }) {
+  // FIX #3: remove sticky behavior (tabs scroll away and are not visible when scrolling down)
   return (
-    <div className="sticky top-16 z-30 -mx-6 md:-mx-10 px-6 md:px-10 backdrop-blur-xl bg-white/85 dark:bg-zinc-950/75 border-b border-zinc-200/70 dark:border-white/10">
+    <div className="-mx-6 md:-mx-10 px-6 md:px-10 backdrop-blur-xl bg-white/85 dark:bg-zinc-950/75 border-b border-zinc-200/70 dark:border-white/10">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-8 overflow-x-auto no-scrollbar py-4">
           {tabs.map((tab) => (
@@ -98,9 +101,7 @@ export default function DroneDetail() {
   useEffect(() => {
     if (observerRef.current) observerRef.current.disconnect();
 
-    const elements = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean);
+    const elements = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
 
     if (elements.length === 0) return;
 
@@ -127,7 +128,10 @@ export default function DroneDetail() {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-black uppercase mb-4">{t("drones_category.not_found.title")}</h1>
             <p className="text-zinc-500 dark:text-zinc-400 mb-8">{t("drones_category.not_found.desc")}</p>
-            <Link to="/drones" className="text-blue-600 dark:text-blue-500 font-bold uppercase text-xs tracking-widest hover:underline">
+            <Link
+              to="/drones"
+              className="text-blue-600 dark:text-blue-500 font-bold uppercase text-xs tracking-widest hover:underline"
+            >
               ← {t("drones_category.back")}
             </Link>
           </div>
@@ -146,7 +150,7 @@ export default function DroneDetail() {
   return (
     <PageTransition>
       <SEO title={name} description={descriptionText.slice(0, 160)} path={`/drones/${categorySlug}/${droneSlug}`} />
-      
+
       <div className="pt-24 pb-20 bg-white dark:bg-zinc-950 min-h-screen text-zinc-900 dark:text-white transition-colors duration-500">
         {/* Hero */}
         <section className="relative">
@@ -157,11 +161,17 @@ export default function DroneDetail() {
           <div className="max-w-7xl mx-auto px-6 md:px-10">
             {/* Breadcrumb */}
             <nav className="pt-8 flex flex-wrap items-center gap-2 text-sm">
-              <Link to="/drones" className="text-blue-700 dark:text-blue-400 hover:opacity-70 transition uppercase tracking-widest font-black text-[11px]">
+              <Link
+                to="/drones"
+                className="text-blue-700 dark:text-blue-400 hover:opacity-70 transition uppercase tracking-widest font-black text-[11px]"
+              >
                 {t("nav.drones")}
               </Link>
               <span className="text-zinc-300 dark:text-zinc-700">/</span>
-              <Link to={`/drones/${categorySlug}`} className="text-blue-700 dark:text-blue-400 hover:opacity-70 transition uppercase tracking-widest font-black text-[11px]">
+              <Link
+                to={`/drones/${categorySlug}`}
+                className="text-blue-700 dark:text-blue-400 hover:opacity-70 transition uppercase tracking-widest font-black text-[11px]"
+              >
                 {t(category.titleKey)}
               </Link>
               <span className="text-zinc-300 dark:text-zinc-700">/</span>
@@ -193,16 +203,6 @@ export default function DroneDetail() {
                   >
                     {t("drones_detail.contact_us")}
                   </Link>
-                  {drone.autelUrl && (
-                    <a
-                      href={drone.autelUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-center px-8 py-4 rounded-xl bg-white dark:bg-white/5 border border-zinc-200 dark:border-white/10 hover:border-zinc-300 dark:hover:border-white/20 transition font-black uppercase text-xs tracking-[0.28em] text-zinc-900 dark:text-white"
-                    >
-                      {t("drones_detail.view_official")}
-                    </a>
-                  )}
                 </div>
 
                 {topSpecs.length > 0 && (
@@ -246,9 +246,7 @@ export default function DroneDetail() {
                 <h2 className="mt-3 text-2xl md:text-3xl font-black uppercase tracking-tight">
                   {t("drones_detail.sections.overview_title")}
                 </h2>
-                <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed text-lg">
-                  {descriptionText}
-                </p>
+                <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed text-lg">{descriptionText}</p>
               </div>
 
               <div className="lg:col-span-5">
@@ -295,9 +293,7 @@ export default function DroneDetail() {
                 <div className="mt-10 md:mt-14 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 text-center">
                   {performanceSpecs.map((row, idx) => (
                     <div key={idx} className="space-y-1">
-                      <div className="text-xl md:text-2xl font-black tracking-tight">
-                        {t(row.value)}
-                      </div>
+                      <div className="text-xl md:text-2xl font-black tracking-tight">{t(row.value)}</div>
                       <div className="text-[11px] md:text-xs font-semibold uppercase tracking-[0.28em] text-white/80">
                         {t(row.label)}
                       </div>
@@ -315,9 +311,7 @@ export default function DroneDetail() {
                 <div className="text-[11px] font-black uppercase tracking-[0.32em] text-zinc-400 dark:text-zinc-500">
                   {t("drones_detail.tabs.specs")}
                 </div>
-                <h2 className="mt-3 text-2xl md:text-3xl font-black uppercase tracking-tight">
-                  {t("drones_detail.specs")}
-                </h2>
+                <h2 className="mt-3 text-2xl md:text-3xl font-black uppercase tracking-tight">{t("drones_detail.specs")}</h2>
               </div>
 
               {drone.autelUrl && (
@@ -336,7 +330,10 @@ export default function DroneDetail() {
               <div className="mt-10 rounded-[28px] overflow-hidden border border-zinc-200/70 dark:border-white/10 bg-white dark:bg-white/5">
                 <div className="divide-y divide-zinc-200/70 dark:divide-white/10">
                   {drone.specs.map((row, idx) => (
-                    <div key={idx} className="grid md:grid-cols-12 gap-4 px-7 py-6 hover:bg-zinc-50/70 dark:hover:bg-white/5 transition-colors">
+                    <div
+                      key={idx}
+                      className="grid md:grid-cols-12 gap-4 px-7 py-6 hover:bg-zinc-50/70 dark:hover:bg-white/5 transition-colors"
+                    >
                       <div className="md:col-span-4 text-zinc-500 dark:text-zinc-400 font-black uppercase tracking-[0.22em] text-[11px]">
                         {t(row.label)}
                       </div>
@@ -370,9 +367,7 @@ export default function DroneDetail() {
                   <div className="mt-5 font-black uppercase tracking-[0.28em] text-[11px] text-zinc-700 dark:text-zinc-200">
                     {t("drones_detail.video_placeholder_title")}
                   </div>
-                  <div className="mt-2 text-zinc-600 dark:text-zinc-300">
-                    {t("drones_detail.video_placeholder_desc")}
-                  </div>
+                  <div className="mt-2 text-zinc-600 dark:text-zinc-300">{t("drones_detail.video_placeholder_desc")}</div>
                 </div>
               </div>
 
@@ -387,16 +382,6 @@ export default function DroneDetail() {
                   >
                     {t("drones_detail.contact_us")}
                   </Link>
-                  {drone.autelUrl && (
-                    <a
-                      href={drone.autelUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="block text-center px-6 py-4 rounded-xl border border-zinc-200 dark:border-white/10 hover:border-zinc-300 dark:hover:border-white/20 transition font-black uppercase text-xs tracking-[0.28em]"
-                    >
-                      {t("drones_detail.view_official")}
-                    </a>
-                  )}
                 </div>
               </div>
             </div>
@@ -413,12 +398,8 @@ export default function DroneDetail() {
 
             <div className="mt-10 rounded-[28px] border border-zinc-200/70 dark:border-white/10 bg-white dark:bg-white/5 p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div>
-                <div className="font-black uppercase tracking-tight text-lg">
-                  {t("drones_detail.download_card_title")}
-                </div>
-                <div className="mt-2 text-zinc-600 dark:text-zinc-300 max-w-2xl">
-                  {t("drones_detail.download_card_desc")}
-                </div>
+                <div className="font-black uppercase tracking-tight text-lg">{t("drones_detail.download_card_title")}</div>
+                <div className="mt-2 text-zinc-600 dark:text-zinc-300 max-w-2xl">{t("drones_detail.download_card_desc")}</div>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                 <Link
@@ -427,16 +408,6 @@ export default function DroneDetail() {
                 >
                   {t("drones_detail.contact_us")}
                 </Link>
-                {drone.autelUrl && (
-                  <a
-                    href={drone.autelUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-center px-6 py-4 rounded-xl border border-zinc-200 dark:border-white/10 hover:border-zinc-300 dark:hover:border-white/20 transition font-black uppercase text-xs tracking-[0.28em] w-full md:w-auto"
-                  >
-                    {t("drones_detail.view_official")}
-                  </a>
-                )}
               </div>
             </div>
           </section>
@@ -457,16 +428,12 @@ export default function DroneDetail() {
                   className="group rounded-[28px] border border-zinc-200/70 dark:border-white/10 bg-white dark:bg-white/5 p-7 open:shadow-sm transition"
                 >
                   <summary className="cursor-pointer list-none flex items-start justify-between gap-6">
-                    <span className="font-black uppercase tracking-tight text-sm">
-                      {t(`drones_detail.faq.${k}.q`)}
-                    </span>
+                    <span className="font-black uppercase tracking-tight text-sm">{t(`drones_detail.faq.${k}.q`)}</span>
                     <span className="shrink-0 mt-0.5 h-7 w-7 rounded-full border border-zinc-200 dark:border-white/10 flex items-center justify-center text-zinc-600 dark:text-zinc-300 group-open:rotate-45 transition">
                       +
                     </span>
                   </summary>
-                  <div className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                    {t(`drones_detail.faq.${k}.a`)}
-                  </div>
+                  <div className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">{t(`drones_detail.faq.${k}.a`)}</div>
                 </details>
               ))}
             </div>
