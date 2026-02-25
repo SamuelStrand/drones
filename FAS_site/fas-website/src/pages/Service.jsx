@@ -8,9 +8,9 @@ export default function Service() {
   const { t } = useTranslation();
 
   const services = [
-    { id: 'photo', image: '/Picture1.png' },
-    { id: 'thermal', image: '/Picture2.png' },
-    { id: 'model3d', image: '/Picture3.png' }
+    { id: 'photo', image: '/aerophoto.jpeg' },
+    { id: 'thermal', image: '/thermal.jpeg' },
+    { id: 'model3d', image: '/modeling.jpeg' }
   ];
 
   return (
