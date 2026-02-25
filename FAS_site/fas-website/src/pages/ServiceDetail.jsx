@@ -9,9 +9,9 @@ export default function ServiceDetail() {
   const { t } = useTranslation();
 
   const videoData = {
-    photo: "dQw4w9WgXcQ",   
-    thermal: "rcyIdG2GOwU",
-    model3d: "V-_O7nl0Ii0" 
+    photo: "r4Z7CrlkZcY",   
+    thermal: "6K_KBvxr8OM",
+    model3d: "-RqQnjni6Yk" 
   };
   const images = {
     photo: '/Picture1.png',
