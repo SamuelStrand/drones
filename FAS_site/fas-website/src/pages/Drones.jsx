@@ -112,6 +112,90 @@ export default function Drones() {
           </div>
 
         </div>
+
+        <div className="border-t border-zinc-200 dark:border-white/10 pt-24 mt-24 mb-10">
+          <motion.div 
+            initial={{ opacity: 0 }} 
+            whileInView={{ opacity: 1 }} 
+            viewport={{ once: true }}
+            className="bg-zinc-900 rounded-3xl overflow-hidden text-white relative"
+          >
+            {/* Background Decorative Gradient */}
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-900/20 to-transparent pointer-events-none" />
+
+            <div className="p-10 md:p-16 relative z-10">
+              <div className="max-w-4xl mx-auto text-center mb-16">
+                <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-6">
+                  {t('drones_page.lab_title')}
+                </h2>
+                <div className="p-6 border border-white/20 rounded-full inline-block mb-8">
+                  <p className="text-sm md:text-base text-zinc-300 leading-relaxed max-w-3xl">
+                    {t('drones_page.lab_desc')}
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                {/* Left Side: Images */}
+                <div className="relative flex items-center justify-center h-[400px] md:h-[500px]">
+                  {/* Primary Diamond Image (Left) */}
+                  <motion.div 
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    className="absolute left-0 w-[60%] aspect-square z-20"
+                    style={{ 
+                      clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+                      backgroundColor: '#18181b' 
+                    }}
+                  >
+                    <img 
+                      src="/Lab1.png" 
+                      alt="Lab Interior" 
+                      className="w-full h-full object-cover" 
+                    />
+                  </motion.div>
+
+                  {/* Secondary Diamond Image (Right/Overlapping) */}
+                  <motion.div 
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    className="absolute right-4 w-[55%] aspect-square z-10 opacity-80"
+                    style={{ 
+                      clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+                      backgroundColor: '#18181b' 
+                    }}
+                  >
+                    <img 
+                      src="/Lab2.png" 
+                      alt="Drone Assembly" 
+                      className="w-full h-full object-cover" 
+                    />
+                  </motion.div>
+
+                  {/* Decorative Glow behind images */}
+                  <div className="absolute inset-0 bg-blue-600/20 blur-[100px] rounded-full z-0" />
+                </div>
+
+                {/* Right Side: List */}
+                <div className="space-y-8 pl-0 md:pl-10">
+                  <h3 className="text-xl font-bold text-blue-500 uppercase tracking-widest">
+                    {t('drones_page.lab_scope_title')}
+                  </h3>
+                  <ul className="space-y-6">
+                    {(t('drones_page.lab_items', { returnObjects: true }) || []).map((item, i) => (
+                      <li key={i} className="flex items-start gap-4 group">
+                        <span className="text-blue-500 text-lg mt-1 group-hover:translate-x-1 transition-transform">•</span>
+                        <p className="text-zinc-300 group-hover:text-white transition-colors">
+                          {item}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </PageTransition>
   );

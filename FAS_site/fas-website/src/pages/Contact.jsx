@@ -55,8 +55,8 @@ export default function Contact() {
             {/* Address Card */}
             <div className="bg-white dark:bg-zinc-900/50 border border-zinc-200 dark:border-white/5 p-8 rounded-2xl shadow-sm dark:shadow-none backdrop-blur-sm group hover:border-blue-700 dark:hover:border-blue-800/50 transition-all duration-500">
               <p className="text-blue-600 dark:text-blue-500 text-xs font-bold uppercase tracking-[0.3em] mb-4">{t('contact.hq')}</p>
-              <h3 className="text-2xl font-bold mb-1">Almaty, Kazakhstan</h3>
-              <p className="text-zinc-600 dark:text-zinc-400">28 Ryskulbekova Street, 050000</p>
+              <h3 className="text-2xl font-bold mb-1">{t('contact.address')}</h3>
+              <p className="text-zinc-600 dark:text-zinc-400">{t('contact.street')}, 050000</p>
             </div>
 
             {/* Communication Grid */}

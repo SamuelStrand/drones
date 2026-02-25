@@ -93,6 +93,15 @@ const resources = {
           "Flagship controller — Suitable for training centers and advanced FPV systems Radiomaster Zorro ELRS",
           "Compact form factor — Convenient for beginners and mobile sets TBS Tango 2 (Crossfire) (optional)",
           "Minimum latency — Used in professional long-range FPV systems"
+        ],
+        lab_title: "Educational-Laboratory Complex",
+        lab_desc: "A specialized educational environment for training specialists in the field of unmanned aerial vehicles, FPV piloting, and autonomous systems.",
+        lab_scope_title: "The laboratory implements:",
+        lab_items: [
+          "FPV piloting training in a safe simulation environment;",
+          "practical assembly and tuning of UAVs;",
+          "work with autonomous and monitoring systems;",
+          "development of engineering, technical, and research skills."
         ]
       },
       drones_category: {
@@ -485,7 +494,7 @@ const resources = {
       },
       education: {
         title: "Training of UAV Operators (Category 1)",
-        description: "Category 1 — this is the initial level of training for unmanned aerial vehicle operators, designed for the legal and safe operation of UAVs weighing up to 25 kg within established rules.",
+        description: "Category 1 — this is the initial level of training for unmanned aerial vehicle operators, designed for the legal and safe operation of UAVs.",
         group: {
           title: "Group training up to 20 people",
           price: "Cost: 45,000 ₸ per person",
@@ -530,7 +539,8 @@ const resources = {
         title: "Contact",
         us: "Us",
         hq: "Address",
-        addr: "Almaty, Kazakhstan, 28 Ryskulbekova Street",
+        address: "Almaty, Kazakhstan",
+        street: "28 Ryskulbekova Street",
         email: "Email",
         phone: "Phone number",
         form_title: "Your Information",
@@ -631,6 +641,15 @@ const resources = {
           "Флагманский пульт — Подходит для учебных центров и расширенных FPV-систем Radiomaster Zorro ELRS",
           "Компактный форм-фактор — Удобен для начинающих и мобильных комплектов TBS Tango 2 (Crossfire) (опционально)",
           "Минимальная задержка — Используется в профессиональных дальнобойных FPV-системах"
+        ],
+        lab_title: "Учебно-лабораторный комплекс",
+        lab_desc: "Специализированная образовательная среда для подготовки специалистов в области беспилотных летательных аппаратов, FPV-пилотирования и автономных систем.",
+        lab_scope_title: "В рамках лаборатории реализуются:",
+        lab_items: [
+          "обучение FPV-пилотированию в безопасной симуляционной среде;",
+          "практическая сборка и настройка БПЛА;",
+          "работа с автономными и мониторинговыми системами;",
+          "развитие инженерных, технических и исследовательских навыков."
         ]
       },
       
@@ -1022,7 +1041,7 @@ const resources = {
   
       education: {
         title: "ОБУЧЕНИЕ ОПЕРАТОРОВ БПЛА (КАТЕГОРИЯ 1)",
-        description: "Категория 1 — это начальный уровень подготовки операторов беспилотных летательных аппаратов, предназначенный для законной и безопасной эксплуатации БПЛА массой до 25 кг в пределах установленных правил.",
+        description: "Категория 1 — это начальный уровень подготовки операторов беспилотных летательных аппаратов, предназначенный для законной и безопасной эксплуатации БПЛА.",
         group: {
           title: "Групповое обучение до 20 человек",
           price: "Стоимость: 45 000 ₸ с человека",
@@ -1067,7 +1086,8 @@ const resources = {
         title: "Свяжитесь",
         us: "с нами",
         hq: "Адрес",
-        addr: "Алматы, Казахстан, Рыскулбекова 28",
+        address: "Алматы, Казахстан",
+        street: "ул. Рыскулбекова 28",
         email: "Эл. почта",
         phone: "Номер телефона",
         form_title: "Ваши данные",
@@ -1163,7 +1183,7 @@ const resources = {
 
       education: {
         title: "БҰА операторларын даярлау (1-санат)",
-        description: "1-санат — бұл салмағы 25 кг-ға дейінгі ұшқышсыз ұшу аппараттарын белгіленген ережелер аясында заңды және қауіпсіз пайдалануға арналған операторларды даярлаудың бастапқы деңгейі.",
+        description: "1-санат-ұшқышсыз ұшу аппараттарының операторларын даярлаудың бастапқы деңгейі, ұшқышсыз ұшу аппараттарын заңды және қауіпсіз пайдалануға арналған.",
         group: {
           title: "20 адамға дейінгі топтық оқыту",
           price: "Құны: бір адамға 45,000 ₸",
@@ -1245,6 +1265,15 @@ const resources = {
           "Флагмандық пульт — Оқу орталықтары мен кеңейтілген FPV-жүйелеріне қолайлы Radiomaster Zorro ELRS",
           "Ықшам форма-фактор — Жаңа бастаушылар мен мобильді жиынтықтарға ыңғайлы TBS Tango 2 (Crossfire) (қосымша)",
           "Минималды кідіріс — Кәсіби алыс қашықтықтағы FPV-жүйелерінде қолданылады"
+        ],
+        lab_title: "Оқу-зертханалық кешен",
+        lab_desc: "Ұшқышсыз ұшу аппараттары, FPV-пилоттау және автономды жүйелер саласындағы мамандарды даярлауға арналған мамандандырылған білім беру ортасы.",
+        lab_scope_title: "Зертхана аясында жүзеге асырылады:",
+        lab_items: [
+          "қауіпсіз имитациялық ортада FPV-пилоттауды оқыту;",
+          "БПЛА-ны практикалық құрастыру және баптау;",
+          "автономды және мониторинг жүйелерімен жұмыс;",
+          "инженерлік, техникалық және зерттеу дағдыларын дамыту."
         ]
       },
       drones_category: {
@@ -1581,7 +1610,8 @@ const resources = {
         title: "Бізбен",
         us: "байланысыңыз",
         hq: "Адрес",
-        addr: "Алматы, Казахстан, Рыскулбекова 28",
+        address: "Алматы, Казахстан",
+        street: "ул. Рыскулбекова 28",
         email: "Электрондық пошта",
         phone: "Телефон нөмірі",
         form_title: "Сіздің деректеріңіз",

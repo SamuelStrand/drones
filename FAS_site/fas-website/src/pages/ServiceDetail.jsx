@@ -14,9 +14,9 @@ export default function ServiceDetail() {
     model3d: "-RqQnjni6Yk" 
   };
   const images = {
-    photo: '/Picture1.png',
-    thermal: '/Picture2.png',
-    model3d: '/Picture3.png'
+    photo: '/aerophoto.jpeg',
+    thermal: '/thermal.jpeg',
+    model3d: '/modeling.jpeg'
   };
 
   const currentVideoId = videoData[id];
