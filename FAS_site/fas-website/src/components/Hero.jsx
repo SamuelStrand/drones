@@ -18,7 +18,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-5xl md:text-8xl font-extrabold text-white tracking-tighter mb-4 uppercase">
-          {t('hero.title')} <span className="text-blue-800">{t('hero.subtitle')}</span>
+          Forpost Aero Service
         </h1>
         <p className="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto mb-8 font-light">
           {t('hero.desc')}
