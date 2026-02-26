@@ -73,28 +73,28 @@ export default function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative overflow-hidden rounded-3xl transition-all duration-500
-                       bg-zinc-200 dark:bg-zinc-900 
-                       border border-zinc-200 dark:border-white/5 
-                       p-8 md:p-16 shadow-2xl shadow-blue-900/5 dark:shadow-none"
+            className="relative overflow-hidden rounded-2xl md:rounded-3xl transition-all duration-500
+                      bg-zinc-200 dark:bg-zinc-900 
+                      border border-zinc-200 dark:border-white/5 
+                      p-6 sm:p-8 md:p-16 shadow-2xl shadow-blue-900/5 dark:shadow-none"
           >
-            {/* Background Branding Decor - Darker in bright mode for contrast */}
-            <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-500 dark:bg-blue-500/5 skew-x-12 translate-x-20 pointer-events-none" />
+            {/* Background Branding Decor - Adjusted for mobile visibility */}
+            <div className="absolute top-0 right-0 w-full md:w-1/2 h-full bg-blue-500/10 dark:bg-blue-500/5 skew-x-12 translate-x-1/2 md:translate-x-20 pointer-events-none" />
             
-            <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative z-10 grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tighter mb-6 leading-tight text-zinc-900 dark:text-white">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-tighter mb-4 md:mb-6 leading-tight text-zinc-900 dark:text-white">
                   {t('education.integration.title')}
                 </h2>
-                <p className="text-zinc-600 dark:text-zinc-400 mb-8 leading-relaxed">
+                <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 mb-6 md:mb-8 leading-relaxed">
                   <strong className="text-blue-600 dark:text-white">Forpost Aero Service</strong> {t('education.integration.intro')}
                 </p>
                 
-                <h3 className="text-blue-600 dark:text-blue-500 font-bold uppercase tracking-widest text-sm mb-4">
+                <h3 className="text-blue-600 dark:text-blue-500 font-bold uppercase tracking-widest text-xs md:text-sm mb-4">
                   {t('education.integration.include_title')}
                 </h3>
-                <ul className="space-y-3 text-sm text-zinc-600 dark:text-zinc-300">
-                  {integrationList.map((item, i) => (
+                <ul className="space-y-3 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300">
+                  {(integrationList || []).map((item, i) => (
                     <li key={i} className="flex gap-3">
                       <span className="text-blue-600 dark:text-blue-500 text-lg leading-none">•</span>
                       {item}
@@ -103,19 +103,18 @@ export default function Education() {
                 </ul>
               </div>
 
-              {/* Glassmorphism Card */}
-              <div className="bg-white/40 dark:bg-white/5 border border-white/20 dark:border-white/10 p-8 rounded-2xl backdrop-blur-md shadow-inner">
-                <p className="text-lg italic text-zinc-700 dark:text-zinc-200 leading-relaxed mb-6">
+              {/* Glassmorphism Card - Optimized padding and font for mobile */}
+              <div className="bg-white/40 dark:bg-white/5 border border-white/20 dark:border-white/10 p-6 md:p-8 rounded-2xl backdrop-blur-md shadow-inner">
+                <p className="text-base md:text-lg italic text-zinc-700 dark:text-zinc-200 leading-relaxed mb-6">
                   {t('education.integration.kazgasa_text')}
                 </p>
-                <div className="flex justify-end items-baseline gap-2">
-                  <span className="text-xs uppercase tracking-[0.3em] font-bold text-blue-600 dark:text-blue-500 opacity-50">Partner</span>
-                  <span className="text-5xl font-black text-zinc-900 dark:text-white opacity-10 dark:opacity-20 tracking-tighter select-none">KAZGASA</span>
+                <div className="flex justify-between md:justify-end items-center md:items-baseline gap-2">
+                  <span className="text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold text-blue-600 dark:text-blue-500 opacity-50">Partner</span>
+                  <span className="text-3xl md:text-5xl font-black text-zinc-900 dark:text-white opacity-20 tracking-tighter select-none">KAZGASA</span>
                 </div>
               </div>
             </div>
           </motion.div>
-
         </div>
       </div> 
     </PageTransition>
