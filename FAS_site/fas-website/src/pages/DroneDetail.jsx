@@ -349,26 +349,53 @@ export default function DroneDetail() {
             </h2>
 
             <div className="mt-8 grid lg:grid-cols-12 gap-8 items-stretch">
-              <div className="lg:col-span-7 rounded-[28px] border border-zinc-200/70 dark:border-white/10 bg-zinc-50/60 dark:bg-white/5 p-10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="mx-auto h-16 w-16 rounded-2xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 flex items-center justify-center font-black text-xl">
-                    ▶
+              {/* Video Player Container */}
+              <div className="lg:col-span-8 overflow-hidden rounded-[28px] border border-zinc-200/70 dark:border-white/10 bg-zinc-50/60 dark:bg-white/5 shadow-2xl shadow-blue-900/5">
+                {drone.youtubeId ? (
+                  <div className="aspect-video w-full">
+                    <iframe
+                      className="w-full h-full"
+                      src={`https://www.youtube.com/embed/${drone.youtubeId}?rel=0&modestbranding=1`}
+                      title={name}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                  <div className="mt-5 font-black uppercase tracking-[0.28em] text-[11px] text-zinc-700 dark:text-zinc-200">
-                    {t("drones_detail.video_placeholder_title")}
+                ) : (
+                  /* Fallback Placeholder when no youtubeId is in DRONES_DATA */
+                  <div className="aspect-video flex items-center justify-center p-10 text-center">
+                    <div>
+                      <div className="mx-auto h-16 w-16 rounded-2xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 flex items-center justify-center font-black text-xl">
+                        ▶
+                      </div>
+                      <div className="mt-5 font-black uppercase tracking-[0.28em] text-[11px] text-zinc-700 dark:text-zinc-200">
+                        {t("drones_detail.video_placeholder_title")}
+                      </div>
+                      <div className="mt-2 text-zinc-600 dark:text-zinc-300">
+                        {t("drones_detail.video_placeholder_desc")}
+                      </div>
+                    </div>
                   </div>
-                  <div className="mt-2 text-zinc-600 dark:text-zinc-300">{t("drones_detail.video_placeholder_desc")}</div>
-                </div>
+                )}
               </div>
 
-              <div className="lg:col-span-5 rounded-[28px] border border-zinc-200/70 dark:border-white/10 bg-white dark:bg-white/5 p-10">
-                <div className="text-[11px] font-black uppercase tracking-[0.32em] text-zinc-400 dark:text-zinc-500">
-                  {t("drones_detail.sections.next_steps")}
+              {/* CTA Sidebar */}
+              <div className="lg:col-span-4 rounded-[28px] border border-zinc-200/70 dark:border-white/10 bg-white dark:bg-white/5 p-10 flex flex-col justify-between">
+                <div>
+                  <div className="text-[11px] font-black uppercase tracking-[0.32em] text-zinc-400 dark:text-zinc-500">
+                    {t("drones_detail.sections.next_steps")}
+                  </div>
+                  <p className="mt-4 text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
+                    {t("drones_detail.video_sidebar_text", { 
+                      defaultValue: "Watch the advanced capabilities of Autel technology in action. Our team provides full training and support for all enterprise systems." 
+                    })}
+                  </p>
                 </div>
-                <div className="mt-4 space-y-4">
+                <div className="mt-8">
                   <Link
                     to="/contact"
-                    className="block text-center px-6 py-4 rounded-xl bg-zinc-900 text-white hover:bg-zinc-800 transition font-black uppercase text-xs tracking-[0.28em]"
+                    className="block text-center px-6 py-4 rounded-xl bg-zinc-900 text-white hover:bg-blue-600 transition-all duration-300 font-black uppercase text-xs tracking-[0.28em]"
                   >
                     {t("drones_detail.contact_us")}
                   </Link>
